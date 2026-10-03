@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-03",
+  "runtime": "llama.cpp b11146 / 7fe450e19",
+  "sources": [
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-4B/resolve/1cfa9a7208912126459214e8b04321603b3df60c/README.md",
+      "sha256": "71add1cd091c309b1cb1a6b943f2476eb2b004124b3bd1d32dcd0b24cc1abc47",
+      "snapshot": ".test-data/adaptive-optimization/sources/Qwen_Qwen3-4B_README.md"
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B/resolve/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/README.md",
+      "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb",
+      "snapshot": ".test-data/adaptive-optimization/sources/Qwen_Qwen3.5-4B_README.md"
+    },
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B/resolve/a07cc9a04f16550a088caea529712d1d335b0ac1/README.md",
+      "sha256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+      "snapshot": ".test-data/adaptive-optimization/sources/HuggingFaceTB_SmolLM3-3B_README.md"
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1/resolve/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/README.md",
+      "sha256": "d26d26ddb518fee60c6c6bf7a708bd751b1619d93a4944f188143693d956c77f",
+      "snapshot": ".test-data/adaptive-optimization/sources/deepseek-ai_DeepSeek-R1_README.md"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-E2B-it/resolve/3e22461f65e89153144f8adb70e3b8c2cc9845a7/generation_config.json",
+      "sha256": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de",
+      "snapshot": ".test-data/adaptive-optimization/sources/google_gemma-4-E2B-it_generation_config.json"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-E4B-it/resolve/ee0ef6023621cff504d758262d4e04895a5af4a2/generation_config.json",
+      "sha256": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de",
+      "snapshot": ".test-data/adaptive-optimization/sources/google_gemma-4-E4B-it_generation_config.json"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-31B-it/resolve/842da3794eaa0b77d5f08bae87a17459d91ff475/generation_config.json",
+      "sha256": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de",
+      "snapshot": ".test-data/adaptive-optimization/sources/google_gemma-4-31B-it_generation_config.json"
+    }
+  ],
+  "runtimeSource": "https://github.com/ggml-org/llama.cpp/blob/7fe450e19/docs/speculative.md",
+  "policy": {
+    "strategy": "Bounded, per-machine local execution search. No global preset inferred from this test Mac.",
+    "generation": "Apply reviewed everyday publisher recommendations for Qwen3, Qwen3.5, Gemma4 E2B/E4B/31B, SmolLM3 and R1 Qwen distillations; leave other models on explicitly labeled Hearth defaults. Top-k disabled when publisher only recommends temperature and top-p.",
+    "speculation": "Test ngram-simple only on reviewed dense/GQA architectures. Every draft is verified by the target. No synthetic acceptance or extra draft weights.",
+    "acceptance": "At least 8% less total time; no workload or first-answer regression above 15% plus scheduling tolerance; exact greedy outputs and token counts; memory bound; repeat stability within 15%; all prior passing basic checks retained and at least 4/6 passing.",
+    "invalidation": "Exact weights, profile, engine, machine/OS/power fingerprint, age <30 days.",
+    "notImplemented": "Target-specific EAGLE3/DFlash/DSpark/MTP draft downloads, TurboQuant custom kernels, arbitrary RoPE stretching and retraining. These need separate backend, target, license, memory and quality validation."
+  }
+}

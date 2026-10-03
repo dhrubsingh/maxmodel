@@ -1,0 +1,99 @@
+{
+  "chip" : "Apple M4",
+  "contextTokens" : 4096,
+  "engineVersion" : "b11146",
+  "examples" : [
+    {
+      "answer" : "Subject: Revised Slides Request  \n\nHi Sam,  \n\nCould you please send the revised slides by Thursday at 3 pm? I need time to review them before Friday's meeting.  \n\nThanks,  \nAlex",
+      "firstTokenSeconds" : 0.46843397617340088,
+      "modelID" : "qwen3-4b",
+      "modelSHA256" : "f6f851777709861056efcdad3af01da38b31223a3ba26e61a4f8bf3a2195813a",
+      "prompt" : "Rewrite this as a friendly, concise email. Keep the deadline and do not invent details: 'Hi Sam. Please send the revised slides by Thursday at 3 pm. I need time to review them before Friday's meeting. Thanks, Alex.'",
+      "promptID" : "email",
+      "reachedLimit" : false,
+      "tokensPerSecond" : 24.478211108451013
+    },
+    {
+      "answer" : "- The sky appears blue because shorter wavelengths of light, like blue, scatter more easily in the atmosphere.  \n- During the day, the blue light from the sun scatters all around and reaches our eyes, making the sky look blue.  \n- At sunset, the light travels through more of the atmosphere, scattering the blue out of our view and leaving reds and oranges visible.",
+      "firstTokenSeconds" : 0.3655010461807251,
+      "modelID" : "qwen3-4b",
+      "modelSHA256" : "f6f851777709861056efcdad3af01da38b31223a3ba26e61a4f8bf3a2195813a",
+      "prompt" : "Explain why the sky looks blue to someone with no science background, in three short bullet points.",
+      "promptID" : "explain",
+      "reachedLimit" : false,
+      "tokensPerSecond" : 24.23990581065171
+    },
+    {
+      "answer" : "Not specified.",
+      "firstTokenSeconds" : 0.47948408126831055,
+      "modelID" : "qwen3-4b",
+      "modelSHA256" : "f6f851777709861056efcdad3af01da38b31223a3ba26e61a4f8bf3a2195813a",
+      "prompt" : "Use only these notes to answer the question. Notes: The workshop is on October 12. It starts at 10 am. Bring a notebook. Question: Where is the workshop? If the notes do not say, reply only: Not specified.",
+      "promptID" : "grounding",
+      "reachedLimit" : false,
+      "tokensPerSecond" : 28.298149301035714
+    },
+    {
+      "answer" : "Hi Sam,  \nPlease send the revised slides by Thursday at 3 pm. I need time to review them before Friday’s meeting. Thanks, Alex.",
+      "firstTokenSeconds" : 0.16998589038848877,
+      "modelID" : "qwen3-17b",
+      "modelSHA256" : "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+      "prompt" : "Rewrite this as a friendly, concise email. Keep the deadline and do not invent details: 'Hi Sam. Please send the revised slides by Thursday at 3 pm. I need time to review them before Friday's meeting. Thanks, Alex.'",
+      "promptID" : "email",
+      "reachedLimit" : false,
+      "tokensPerSecond" : 43.876720568981987
+    },
+    {
+      "answer" : "- The sky appears blue because sunlight is scattered by the molecules in the atmosphere.  \n- Sunlight contains a mix of colors, and blue light is scattered more than other colors.  \n- This scattering makes the sky look blue to someone who sees it directly.",
+      "firstTokenSeconds" : 0.16158699989318848,
+      "modelID" : "qwen3-17b",
+      "modelSHA256" : "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+      "prompt" : "Explain why the sky looks blue to someone with no science background, in three short bullet points.",
+      "promptID" : "explain",
+      "reachedLimit" : false,
+      "tokensPerSecond" : 46.930137270651521
+    },
+    {
+      "answer" : "Not specified.",
+      "firstTokenSeconds" : 0.21090793609619141,
+      "modelID" : "qwen3-17b",
+      "modelSHA256" : "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+      "prompt" : "Use only these notes to answer the question. Notes: The workshop is on October 12. It starts at 10 am. Bring a notebook. Question: Where is the workshop? If the notes do not say, reply only: Not specified.",
+      "promptID" : "grounding",
+      "reachedLimit" : false,
+      "tokensPerSecond" : 58.145169105533483
+    },
+    {
+      "answer" : "Subject: Revised Slides Needed by Thursday\n\nHi Sam,\n\nCould you please send the revised slides by Thursday at 3 pm? I need time to review them before Friday's meeting.\n\nThanks,\n\nAlex",
+      "firstTokenSeconds" : 0.32214200496673584,
+      "modelID" : "gemma4-e2b",
+      "modelSHA256" : "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8",
+      "prompt" : "Rewrite this as a friendly, concise email. Keep the deadline and do not invent details: 'Hi Sam. Please send the revised slides by Thursday at 3 pm. I need time to review them before Friday's meeting. Thanks, Alex.'",
+      "promptID" : "email",
+      "reachedLimit" : false,
+      "tokensPerSecond" : 34.409001394764871
+    },
+    {
+      "answer" : "Here are three short points explaining why the sky looks blue:\n\n* **Sunlight is made of all colors:** Sunlight looks white, but it's actually made up of all the colors of the rainbow mixed together.\n* **Earth's atmosphere scatters light:** When sunlight hits the Earth's atmosphere, it bumps into tiny molecules in the air.\n* **Blue light scatters the most:** The tiny molecules scatter the shorter, bluer wavelengths of light more effectively than the other colors, making the whole sky appear blue to us.",
+      "firstTokenSeconds" : 0.28169310092926025,
+      "modelID" : "gemma4-e2b",
+      "modelSHA256" : "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8",
+      "prompt" : "Explain why the sky looks blue to someone with no science background, in three short bullet points.",
+      "promptID" : "explain",
+      "reachedLimit" : false,
+      "tokensPerSecond" : 34.735641428041681
+    },
+    {
+      "answer" : "Not specified.",
+      "firstTokenSeconds" : 0.76314306259155273,
+      "modelID" : "gemma4-e2b",
+      "modelSHA256" : "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8",
+      "prompt" : "Use only these notes to answer the question. Notes: The workshop is on October 12. It starts at 10 am. Bring a notebook. Question: Where is the workshop? If the notes do not say, reply only: Not specified.",
+      "promptID" : "grounding",
+      "reachedLimit" : false,
+      "tokensPerSecond" : 52.714812862414348
+    }
+  ],
+  "memoryBytes" : 17179869184,
+  "recordedAt" : "2026-10-01T05:16:13Z"
+}

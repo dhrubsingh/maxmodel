@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MaxModel · The smartest AI your Mac can run</title>
+<meta name="description" content="MaxModel reads your Mac's chip and memory, picks the most capable open model that runs well on it, and lets you chat with it offline. Free, private, no account.">
+<meta property="og:title" content="MaxModel · The smartest AI your Mac can run">
+<meta property="og:description" content="Free, private, and entirely on your Mac. No account, no subscription, no cloud.">
+<meta property="og:image" content="assets/screenshot.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<style>
+  :root {
+    --paper: #F5F2EB; --surface: #FCFAF6; --raised: #EDE8DE; --ink: #1A1916; --muted: #6E685E;
+    --faint: #A8A196; --line: #E2DCD0; --ember: #E4541C; --ember-deep: #B93F10; --ember-soft: #FBE5D9;
+    --caution: #A86A12;
+    --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #131211; --surface: #1C1A18; --raised: #262320; --ink: #EEE9DF; --muted: #A19A8E;
+      --faint: #5E5850; --line: #2E2B27; --ember: #FF6B2C; --ember-deep: #E0541A; --ember-soft: #3A2216;
+      --caution: #F0B256;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 var(--sans); }
+  a { color: var(--ember); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 26px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 650; font-size: 19px; letter-spacing: -0.2px; color: var(--ink); }
+  .brand img { width: 30px; height: 30px; }
+  .brand:hover { text-decoration: none; }
+  nav a { color: var(--muted); font-size: 14px; margin-left: 22px; }
+  .eyebrow { font: 600 11px/1 var(--mono); letter-spacing: 1.3px; text-transform: uppercase; color: var(--ember); }
+  .hero { padding: 54px 0 34px; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; }
+  h1 { font-size: 54px; line-height: 1.04; letter-spacing: -1.6px; margin: 18px 0 18px; font-weight: 650; }
+  .lede { font-size: 18px; color: var(--muted); margin: 0 0 30px; max-width: 34em; }
+  .download { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; }
+  .button { display: inline-flex; align-items: center; gap: 10px; background: var(--ember); color: #fff; font-weight: 600;
+            font-size: 16px; padding: 14px 22px; border-radius: 12px; box-shadow: 0 6px 18px rgba(228, 84, 28, 0.25); }
+  .button:hover { background: var(--ember-deep); text-decoration: none; }
+  .button svg { width: 16px; height: 16px; }
+  .alt { font-size: 14px; color: var(--muted); }
+  .meta { margin-top: 14px; font: 12.5px/1.5 var(--mono); color: var(--muted); }
+  .meta span + span::before { content: "·"; margin: 0 8px; color: var(--faint); }
+  .notice { margin-top: 22px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+            font-size: 13.5px; color: var(--muted); max-width: 36em; }
+  .notice strong { color: var(--ink); font-weight: 600; }
+  .shot { border-radius: 14px; border: 1px solid var(--line); box-shadow: 0 24px 60px rgba(26, 25, 22, 0.14); width: 100%; height: auto; display: block; background: var(--surface); }
+  .trust { display: grid; grid-template-columns: repeat(4, auto); justify-content: space-between; gap: 10px 24px; padding: 22px 0 8px; border-top: 1px solid var(--line); margin-top: 36px; font-size: 14px; color: var(--muted); }
+  .trust b { color: var(--ink); font-weight: 600; }
+  section { padding: 56px 0 8px; }
+  h2 { font-size: 30px; letter-spacing: -0.6px; margin: 12px 0 28px; font-weight: 650; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+  .card .n { font: 600 12px/1 var(--mono); color: var(--ember); }
+  .card h3 { margin: 12px 0 8px; font-size: 18px; letter-spacing: -0.2px; font-weight: 620; }
+  .card p { margin: 0; color: var(--muted); font-size: 14.5px; }
+  .feature { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 40px; align-items: center; }
+  .feature .lede { font-size: 16.5px; margin-bottom: 18px; }
+  .points { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .points li { position: relative; padding-left: 20px; font-size: 14.5px; color: var(--muted); }
+  .points li::before { content: ""; position: absolute; left: 2px; top: 8px; width: 7px; height: 7px; border-radius: 50%; background: var(--ember); }
+  .readouts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .readout .label { font: 600 10.5px/1 var(--mono); letter-spacing: 1.1px; text-transform: uppercase; color: var(--muted); }
+  .readout .value { font: 500 22px/1.2 var(--mono); margin-top: 8px; }
+  .readout .detail { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  footer { margin-top: 64px; padding: 26px 0 40px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+  @media (max-width: 860px) {
+    .hero, .feature { grid-template-columns: 1fr; padding-top: 28px; }
+    h1 { font-size: 40px; letter-spacing: -1px; }
+    .steps, .readouts, .trust { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) { .steps, .readouts, .trust { grid-template-columns: 1fr; } nav a:not(:last-child) { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./"><img src="assets/icon.png" alt="" width="30" height="30">MaxModel</a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#see">Images &amp; PDFs</a>
+      <a href="#updates">Updates</a>
+      <a href="https://github.com/dhrubsingh/maxmodel">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Free · Private · On your Mac</div>
+        <h1>The smartest AI your Mac can run.</h1>
+        <p class="lede">MaxModel reads your Mac's chip, memory, and memory speed, picks the most capable open model that runs well on it, and downloads it. Then you chat, entirely offline. No account, no subscription, no cloud.</p>
+        <div class="download">
+          <a class="button" id="primary" href="https://github.com/dhrubsingh/maxmodel/releases/latest/download/MaxModel-macOS.zip">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v9M4 7.5 8 11.5l4-4M2.5 14h11"/></svg>
+            <span id="primary-label">Download for Mac</span>
+          </a>
+          <a class="alt" id="secondary" href="https://github.com/dhrubsingh/maxmodel/releases/latest/download/MaxModel-macOS-Intel.zip">Intel Mac? Download here</a>
+        </div>
+        <div class="meta" id="meta"><span>macOS 14 or later</span><span>Apple Silicon and Intel</span></div>
+        <div class="notice" id="first-open" hidden>
+          <strong>Opening it the first time.</strong> This early build isn't notarized by Apple yet, so macOS will say it can't verify the developer.
+          Unzip it, move MaxModel to Applications, and open it once. Then go to <strong>System Settings → Privacy &amp; Security</strong>, scroll down, and click <strong>Open Anyway</strong>.
+          You only do this once; later updates install without it.
+        </div>
+      </div>
+      <img class="shot" src="assets/screenshot.png" width="2440" height="1640" alt="MaxModel recommending Qwen3.5 4B for a 16 GB M4 Mac, with its download size, estimated speed, and thinking time.">
+    </div>
+
+    <div class="trust">
+      <div><b>Free forever.</b> Open-source app, open models.</div>
+      <div><b>Nothing leaves your Mac.</b> Chats stay local.</div>
+      <div><b>Works offline</b> after the model downloads.</div>
+      <div><b>No account.</b> Ever.</div>
+    </div>
+
+    <section id="how">
+      <div class="eyebrow">How it works</div>
+      <h2>One question, answered for your hardware.</h2>
+      <div class="steps">
+        <div class="card"><div class="n">01</div><h3>Reads your Mac</h3><p>Chip, memory, how much of it AI can use, and memory speed, which decides how fast a model can write.</p></div>
+        <div class="card"><div class="n">02</div><h3>Picks the smartest fit</h3><p>Compares open models on published benchmarks and keeps only those that fit and still answer at a comfortable pace.</p></div>
+        <div class="card"><div class="n">03</div><h3>Chat privately</h3><p>Ask anything, or drop in a screenshot, photo, or PDF. Every answer is generated on your Mac, online or off.</p></div>
+      </div>
+    </section>
+
+    <section id="see">
+      <div class="eyebrow">Ask about what you see</div>
+      <h2>Drop in a screenshot, photo, or PDF.</h2>
+      <div class="feature">
+        <div>
+          <p class="lede">Ask what an error means, what a chart shows, or what a lease says. Models that can see look at the image itself; others read the text in it, and MaxModel tells you which before you send.</p>
+          <ul class="points">
+            <li>Drag in, paste, or attach up to 10 files per message.</li>
+            <li>Scanned PDFs are read too. Long ones are trimmed to what fits, and you're told how many pages made it.</li>
+            <li>Images and documents are read on your Mac and never uploaded.</li>
+          </ul>
+        </div>
+        <img class="shot" src="assets/attachments.png" width="2440" height="1640" loading="lazy"
+             alt="A MaxModel chat answering a question about an attached screenshot, with an image and a PDF waiting in the message box.">
+      </div>
+    </section>
+
+    <section>
+      <div class="eyebrow">What it picks</div>
+      <h2>Bigger isn't automatically smarter. Faster memory is.</h2>
+      <div class="readouts">
+        <div class="readout"><div class="label">M1 · 8 GB</div><div class="value">Qwen3.5 4B</div><div class="detail">≈ 14 tokens/s</div></div>
+        <div class="readout"><div class="label">M4 · 16 GB</div><div class="value">Qwen3.5 4B</div><div class="detail">≈ 24 tokens/s</div></div>
+        <div class="readout"><div class="label">M4 Pro · 24 GB</div><div class="value">Qwen3.5 9B</div><div class="detail">≈ 26 tokens/s</div></div>
+        <div class="readout"><div class="label">M4 Max · 128 GB</div><div class="value">Qwen3.5 35B-A3B</div><div class="detail">≈ 159 tokens/s</div></div>
+      </div>
+      <p class="meta" style="margin-top:18px">Estimates for the "Best answers" setting. The app shows the estimate for your Mac and replaces it with measured speed once you test locally.</p>
+    </section>
+
+    <section id="updates">
+      <div class="eyebrow">Updates</div>
+      <h2>Stays current, on your terms.</h2>
+      <p class="lede" style="margin-bottom:0">On its second launch, MaxModel asks whether to check for updates automatically. Say no and it never checks on its own; you can still choose <strong>Check for Updates…</strong> in the MaxModel menu. Every update is cryptographically signed and verified before it's installed.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>MaxModel is open source. Models keep their publishers' licenses, shown in the app before download.</div>
+    <div><a href="https://github.com/dhrubsingh/maxmodel/releases" id="notes">Release notes</a> · <a href="https://github.com/dhrubsingh/maxmodel">Source</a></div>
+  </footer>
+</div>
+
+<script>
+(async () => {
+  const megabytes = bytes => (bytes / 1e6).toFixed(1) + " MB";
+  // Safari reports every Mac as "MacIntel"; the GPU name is the reliable hint for Intel Macs.
+  const isIntelMac = (() => {
+    try {
+      const gl = document.createElement("canvas").getContext("webgl");
+      const info = gl && gl.getExtension("WEBGL_debug_renderer_info");
+      const renderer = info ? gl.getParameter(info.UNMASKED_RENDERER_WEBGL) : "";
+      return /Intel|AMD|Radeon|NVIDIA/i.test(renderer) && !/Apple/i.test(renderer);
+    } catch { return false; }
+  })();
+  let release;
+  try {
+    const response = await fetch("release.json", { cache: "no-store" });
+    if (response.ok) release = await response.json();
+  } catch {}
+  const primary = document.getElementById("primary"), secondary = document.getElementById("secondary");
+  if (release) {
+    const arm = release.downloads.appleSilicon, intel = release.downloads.intel;
+    const [main, other] = isIntelMac ? [intel, arm] : [arm, intel];
+    primary.href = main.url;
+    secondary.href = other.url;
+    document.getElementById("primary-label").textContent = isIntelMac ? "Download for Intel Mac" : "Download for Mac";
+    secondary.textContent = isIntelMac ? "Apple Silicon Mac? Download here" : "Intel Mac? Download here";
+    document.getElementById("meta").innerHTML =
+      `<span>Version ${release.version}</span><span>${megabytes(main.bytes)}</span><span>macOS ${release.minimumSystemVersion.replace(/\.0$/, "")} or later</span>`;
+    document.getElementById("notes").href = release.releaseURL;
+    document.getElementById("first-open").hidden = release.notarized === true;
+  } else {
+    document.getElementById("first-open").hidden = false;
+    if (isIntelMac) {
+      [primary.href, secondary.href] = [secondary.href, primary.href];
+      document.getElementById("primary-label").textContent = "Download for Intel Mac";
+      secondary.textContent = "Apple Silicon Mac? Download here";
+    }
+  }
+})();
+</script>
+</body>
+</html>

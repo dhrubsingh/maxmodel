@@ -1,0 +1,1893 @@
+{
+  "completedAt": "2026-10-03T23:03:57.595283+00:00",
+  "app": "Hearth 0.8.0 (10)",
+  "platform": "macOS 15.6, Apple M4, 16 GB unified memory",
+  "artifact": "dist/Hearth-macOS.zip",
+  "artifactSHA256": "05f0e0e39f95223af6f6e1da35fd15506348578eec472f097853b093a5a6de74",
+  "coreTests": {
+    "passed": 79,
+    "failed": 0,
+    "domainTests": 9,
+    "markdownTests": 6,
+    "discoveryTests": 2,
+    "appStateTests": 5,
+    "backgroundPersistenceTests": 1,
+    "navigationTests": 4,
+    "knowledgeMetadataTests": 2,
+    "assistantDiscoveryTests": 7,
+    "skipped": 0,
+    "recommendationTests": 19,
+    "contextOptimizationTests": 9,
+    "adaptiveOptimizationTests": 8
+  },
+  "integrationModels": [
+    "Qwen3 \u00b7 0.6B Q4_K_M",
+    "Qwen3 \u00b7 1.7B Q4_K_M",
+    "Qwen3 \u00b7 4B Q4_K_M",
+    "SmolLM3 \u00b7 3B Q4_K_M",
+    "Phi-4 mini \u00b7 3.8B Q4_K_M",
+    "Ministral 3 \u00b7 3B Q4_K_M",
+    "Qwen3.5 \u00b7 0.8B Q4_K_M",
+    "Gemma 4 \u00b7 E2B Q4_K_M",
+    "SmolLM2 \u00b7 0.135B Q4_K_M",
+    "Granite 3.3 \u00b7 2B Q4_K_M",
+    "OLMo 2 \u00b7 7B Q4_K_M",
+    "DeepSeek R1 \u00b7 Qwen distills \u00b7 1.5B Q4_K_M",
+    "Qwen3.5 \u00b7 4B Q4_K_M"
+  ],
+  "integrationPassed": [
+    "pinned model download",
+    "SHA-256 verification",
+    "pause and resume",
+    "authenticated loopback inference",
+    "multi-turn context",
+    "context trimming",
+    "oversized input rejection",
+    "stream cancellation and recovery",
+    "model switching and old-process termination",
+    "model deletion",
+    "three-prompt benchmark",
+    "conversation persistence",
+    "memory release",
+    "external networking denied by macOS sandbox",
+    "engine cleanup after parent crash",
+    "six additional exact weight configurations downloaded, verified, loaded, switched and unloaded",
+    "installed license documents and provenance preservation",
+    "reasoning separated from final answer in DeepSeek R1 streaming",
+    "three-model live local comparison, sequential model loading, and continuing the chosen answer as a saved conversation",
+    "local prompt-prefix reuse with auxiliary RAM archive disabled",
+    "offline regression with updated prompt reuse settings",
+    "0.5.0 extended offline regression against the final packaged runtime",
+    "Qwen3.5 4B and Gemma 4 E2B measured thinking-budget adjustment followed by a repeated three-prompt benchmark and six graded sanity checks"
+  ],
+  "uiPassed": [
+    "Final native preview shows Everyday / Longer chats and precision override with model-specific plans",
+    "Preference changes preserve the selected assistant and conversation; busy operation controls prevent conflicting changes",
+    "Old measurement marked stale after context or precision changes",
+    "First-use speed check and measured thinking-budget adjustment operate with final checkpoint policy",
+    "Real Gemma 4 E2B load and full calibration at a 49152-token FP16 window",
+    "Six of six basic checks and three of three exact facts from 32763 input tokens; final UI shows measured performance, check span, latency and limits",
+    "Configuration disclosure describes shared/sliding/recurrent layout and two-checkpoint limit",
+    "Final real user app reopened with original conversation digest and selected assistant preserved; left on Performance & why with new memory controls visible"
+  ],
+  "packaging": "Both 0.7.0 ZIPs extracted and verified: ad-hoc signatures, 71 configurations, 240 original notice documents and hashes, runtime dependency closure and macOS 14 deployment targets. ARM runtime tested; Intel static only. Not Developer ID signed or notarized.",
+  "limits": [
+    "Apple Silicon runtime-tested on this M4; Intel cross-built and statically verified, not runtime-tested on Intel hardware. macOS 14+ required.",
+    "71 pinned configurations across 12 families; 13 exact configurations have actual runtime coverage across this and earlier validation runs. Most large configurations were not run on this 16 GB Mac.",
+    "23 configurations have enough reviewed upstream benchmark dimensions for automatic capability ranking. Different evaluation setups and quantizations make the ranking approximate, not proof of the globally smartest model.",
+    "The six synthetic graded checks test basic behavior, not overall intelligence or factual accuracy. Speed observations vary with prompts and current machine conditions.",
+    "Hardware memory counters and runtime memory estimates are approximate; generated hardware-matrix cases are planner tests, not physical hardware measurements.",
+    "License acknowledgement preserves and presents publisher conditions; it does not certify future use.",
+    "No fine-tuning, model merging, automatic multi-model routing, or exact-quantization quality leaderboard.",
+    "Not Developer ID signed or notarized.",
+    "0.6 optimizations use reviewed cache geometry for Qwen3.5 and Gemma 4; other architectures retain conservative cache estimates. Quantization compatibility is not a quality certification."
+  ],
+  "catalog": {
+    "configurations": 71,
+    "families": [
+      "Qwen",
+      "SmolLM",
+      "Phi",
+      "Mistral",
+      "Llama",
+      "Gemma",
+      "Granite",
+      "OLMo",
+      "DeepSeek",
+      "Liquid",
+      "Falcon",
+      "gpt-oss"
+    ],
+    "newFamilyChecks": [
+      {
+        "answer": "2 + 2 = 4.",
+        "benchmarkPrompts": 3,
+        "family": "Qwen",
+        "followup": "Green.",
+        "medianFirstTokenSeconds": 0.04258298873901367,
+        "medianTokensPerSecond": 153.45147785577134,
+        "modelID": "qwen3-06b",
+        "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+      },
+      {
+        "answer": "\nThe sum of 2 and 2 is 4.",
+        "benchmarkPrompts": 3,
+        "family": "SmolLM",
+        "followup": "\nYou mentioned that your favorite color is green in your previous message.",
+        "medianFirstTokenSeconds": 0.26094603538513184,
+        "medianTokensPerSecond": 38.80571872821313,
+        "modelID": "smollm3-3b",
+        "sha256": "4de907d2d388a5508fb7cb443a06effe14cce3518b0a78d3bdd9e74d9edce989"
+      },
+      {
+        "answer": "2 + 2 equals 4.",
+        "benchmarkPrompts": 3,
+        "family": "Phi",
+        "followup": "You said your favorite color is green.",
+        "medianFirstTokenSeconds": 0.22159194946289062,
+        "medianTokensPerSecond": 31.454398985071393,
+        "modelID": "phi4-mini",
+        "sha256": "88c00229914083cd112853aab84ed51b87bdf6b9ce42f532d8c85c7c63b1730a"
+      },
+      {
+        "answer": "4",
+        "benchmarkPrompts": 3,
+        "family": "Mistral",
+        "followup": "Green.",
+        "medianFirstTokenSeconds": 0.19940602779388428,
+        "medianTokensPerSecond": 33.81427530163586,
+        "modelID": "ministral3-3b",
+        "sha256": "fd46fc371ff0509bfa8657ac956b7de8534d7d9baaa4947975c0648c3aa397f4"
+      }
+    ],
+    "qualityObservations": [
+      "Phi missed an initial implicit history-recall prompt; it passed after explicitly referring to the previous message. Compatibility results do not establish answer quality.",
+      "Qwen3.5 0.8B and SmolLM2 135M loaded and streamed correctly but failed the arithmetic and recall probes. Sub-1B catalog entries warn about limited answer quality.",
+      "The recall probe checks for the expected color word, not semantic correctness. DeepSeek R1 included green while misstating whose preference it was. Runtime compatibility must not be interpreted as answer accuracy.",
+      "Measured speeds are observations on this Mac with other applications running, not a controlled cross-model ranking."
+    ],
+    "modelGroups": 28,
+    "testedConfigurations": 13,
+    "newArchitectureChecks": [
+      {
+        "architecture": "qwen35",
+        "arithmeticAnswer": "Wait, I don't know your favorite color yet, but I can't answer math questions.",
+        "arithmeticMatched": false,
+        "formattedAnswer": "*   Python is a widely used programming language for creating web applications and data processing scripts.\n*   It is well-known for its readability and ease of learning, making it suitable for beginners to learn.\n\n```python\nprint(\"hello\")\n```",
+        "id": "qwen35-08",
+        "recallAnswer": "I can't see your previous messages. Please share your favorite color or any other information I can help with.",
+        "recallMatched": false,
+        "runtimePassed": true,
+        "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+        "thinkingSeparated": false,
+        "tokensPerSecond": 110.06940847404951
+      },
+      {
+        "architecture": "llama",
+        "arithmeticAnswer": "1 + 1 = 2",
+        "arithmeticMatched": false,
+        "formattedAnswer": "Here are two Markdown bullet points:\n\n* Python is a high-level programming language that is widely used for scripting and data analysis.\n* It is a versatile language that can be used for tasks such as web development, data analysis, machine learning, and more.\n\nHere's a Python code block that prints \"Hello\":\n\n```python\nprint(\"Hello\")\n```",
+        "id": "smollm2-135m",
+        "recallAnswer": "2 + 2 = 4",
+        "recallMatched": false,
+        "runtimePassed": true,
+        "sha256": "2e8040ceae7815abe0dcb3540b9995eaa1fa0d2ca9e797d0a635ae4433c68c2d",
+        "thinkingSeparated": false,
+        "tokensPerSecond": 325.45329541802437
+      },
+      {
+        "architecture": "granite",
+        "arithmeticAnswer": "2 + 2 equals 4.",
+        "arithmeticMatched": true,
+        "formattedAnswer": "- Python is a high-level, interpreted programming language known for its readability and simplicity.\n- It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.\n\n```python\nprint(\"hello\")\n```",
+        "id": "granite33-2b",
+        "recallAnswer": "You mentioned that your favorite color is green.",
+        "recallMatched": true,
+        "runtimePassed": true,
+        "sha256": "ac71e9e32c0bea919b409c5918f69ca74339854b0319c5065e4e9fb6d95c4852",
+        "thinkingSeparated": false,
+        "tokensPerSecond": 36.55494911832274
+      },
+      {
+        "architecture": "qwen2",
+        "arithmeticAnswer": "\n\n2 + 2 = 4",
+        "arithmeticMatched": true,
+        "formattedAnswer": "\n\n1. Python is a versatile programming language, widely used for web development, automation, and data analysis.  \n2. Python's simplicity and readability make it a favorite among developers.  \n`print('hello')`",
+        "id": "deepseek-r1-15b",
+        "recallAnswer": "\n\nI don't have a favorite color, but I do value green.",
+        "recallMatched": true,
+        "runtimePassed": true,
+        "sha256": "1741e5b2d062b07acf048bf0d2c514dadf2a48f94e2b4aa0cfe069af3838ee2f",
+        "thinkingSeparated": true,
+        "tokensPerSecond": 57.00447954188603
+      },
+      {
+        "architecture": "gemma4",
+        "arithmeticAnswer": "4",
+        "arithmeticMatched": true,
+        "formattedAnswer": "* Python is a high-level, interpreted programming language.\n* It is widely used for web development, data science, and automation.\n\n```python\nprint(\"hello\")\n```",
+        "id": "gemma4-e2b",
+        "recallAnswer": "You mentioned green.",
+        "recallMatched": true,
+        "runtimePassed": true,
+        "sha256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8",
+        "thinkingSeparated": false,
+        "tokensPerSecond": 47.26973729221529
+      },
+      {
+        "architecture": "olmo2",
+        "arithmeticAnswer": "2 + 2 equals 4.",
+        "arithmeticMatched": true,
+        "formattedAnswer": "- **Python is an interpreted, high-level, general-purpose programming language.**\n- **It is designed to be easy to read and write, which makes it ideal for beginners.**\n\n```python\nprint(\"Hello, world!\")\n```",
+        "id": "olmo2-7b",
+        "recallAnswer": "You mentioned your favorite color is green.",
+        "recallMatched": true,
+        "runtimePassed": true,
+        "sha256": "88790198b8ab4f251b5b462756adc0265b3f6b9d9d87708d847645d9568bf168",
+        "thinkingSeparated": false,
+        "tokensPerSecond": 13.079802341975627
+      }
+    ],
+    "recordedExamples": {
+      "models": 3,
+      "promptsPerModel": 3,
+      "resource": "Sources/HearthCore/discovery-examples.json",
+      "notes": "Exact weight digests, same prompts, reference hardware and timing. Examples are not comprehensive quality evaluations."
+    }
+  },
+  "evidence": {
+    "unitTests": ".test-data/context-optimization/tests.log",
+    "offlineRegression": ".test-data/context-optimization/offline.log",
+    "processCleanup": ".test-data/context-optimization/cleanup.log",
+    "build": ".test-data/context-optimization/build-arm64.log",
+    "packageVerification": ".test-data/context-optimization/package-arm64.log",
+    "exploratoryCacheProbe": ".test-data/context-optimization/cache-probe-16384.json",
+    "finalHybridCheck": ".test-data/context-optimization/cache-probe-32768-compact.json",
+    "finalNativeUICheck": ".test-data/context-optimization/ui-long-context-result.json",
+    "packageMetrics": ".test-data/context-optimization/package-metrics.json",
+    "userDataPreserved": true,
+    "userStateAfter": ".test-data/context-optimization/user-state-after.json",
+    "ui": "Isolated preview exercised full 49K FP16 calibration, then exited. Real app left on Performance & why with new controls. An outdated real app process required a normal SIGTERM restart after UI-selection timeouts; saved conversation verified before and after."
+  },
+  "performance": {
+    "baselineLifecycle": {
+      "mainActorSamples": 312,
+      "maximumMainActorDelayMilliseconds": 140.8143749088049,
+      "modelID": "qwen3-06b",
+      "unloadMilliseconds": [
+        140.94166667200625,
+        117.68162506632507,
+        140.61283343471587
+      ]
+    },
+    "updatedLifecycle": {
+      "mainActorSamples": 286,
+      "maximumMainActorDelayMilliseconds": 5.156791778281331,
+      "modelID": "qwen3-06b",
+      "unloadMilliseconds": [
+        58.61583328805864,
+        55.494208354502916,
+        51.694958470761776
+      ]
+    },
+    "promptReuse": [
+      {
+        "answer": "OK.",
+        "firstTokenSeconds": 0.9325649738311768,
+        "reusePrompt": false,
+        "totalSeconds": 0.9804392918013036
+      },
+      {
+        "answer": "OK.",
+        "firstTokenSeconds": 0.918755054473877,
+        "reusePrompt": false,
+        "totalSeconds": 0.9624430416151881
+      },
+      {
+        "answer": "OK.",
+        "firstTokenSeconds": 0.017966032028198242,
+        "reusePrompt": true,
+        "totalSeconds": 0.04798970837146044
+      },
+      {
+        "answer": "OK.",
+        "firstTokenSeconds": 0.017814993858337402,
+        "reusePrompt": true,
+        "totalSeconds": 0.04407820827327669
+      }
+    ],
+    "scope": "Lifecycle probe measures main-actor scheduling delay during three unload/load cycles. Prompt probe uses the same long input repeatedly. Neither establishes speedup for every click or overall generation throughput.",
+    "changes": [
+      "property-level observation",
+      "live reply and composer isolated from unrelated views",
+      "serial background conversation saving and hardware scans",
+      "nonblocking interactive engine unload",
+      "debounced catalog search",
+      "in-memory matching prompt-prefix reuse; no auxiliary prompt archive",
+      "cancellable background model integrity verification"
+    ],
+    "releaseScope": "Historical lifecycle and prompt-reuse probes from releases before 0.5.0."
+  },
+  "releaseValidationScope": "64 passing tests; exact final packages verified; external-network-denied inference, persistence and model switching; final release guardian crash cleanup; CPU-only, Metal dense/hybrid and a thinking-enabled R1 optimizer; native optimization UI and original conversation preservation. Earlier catalog-wide model runs and long-context probes remain historical 0.5/0.6 evidence.",
+  "knowledgeCutoffs": {
+    "reviewedAt": "2026-10-02",
+    "configurations": 71,
+    "publisherDates": 22,
+    "notDocumented": 49,
+    "maintainerSource": "scripts/model-knowledge.json",
+    "policy": "Only dates established by the reviewed publisher source. Preserve approximate precision; do not infer from release dates, base models, or chat outputs."
+  },
+  "sidebarNavigation": {
+    "scope": "Offscreen native hosting layout, debug build, 16 synthetic messages, 6 cycles across Chat/Your Mac/Models, first cycle excluded, 1 ms run-loop interval included. Not physical click-to-display latency.",
+    "before": {
+      "report": ".test-data/navigation/before-layout.json",
+      "samples": 15,
+      "medianMilliseconds": 48.03597927093506,
+      "maximumMilliseconds": 113.01994323730469
+    },
+    "after": {
+      "report": ".test-data/navigation/final-layout.json",
+      "samples": 15,
+      "medianMilliseconds": 1.5889406204223633,
+      "maximumMilliseconds": 5.435943603515625
+    },
+    "current": {
+      "report": ".test-data/context-optimization/navigation.json",
+      "samples": 15,
+      "medianMilliseconds": 1.423954963684082,
+      "maximumMilliseconds": 2.213001251220703
+    }
+  },
+  "efficiency": {
+    "changes": [
+      "Single-result caches for recommendations and filtered/grouped catalog, with observation-preserving invalidation",
+      "Prepared search index and constant catalog metadata",
+      "Release inactive native views and Markdown cache under macOS memory pressure",
+      "Skip unchanged installed license/provenance writes; repair altered files and permissions",
+      "Stage-only debug/local symbol stripping and transitive runtime dependency pruning",
+      "Share identical bundled original notices using internal relative symlinks",
+      "Separate architecture-specific app downloads"
+    ],
+    "beforePackage": {
+      "appBytes": 37738566,
+      "zipBytes": 13815821,
+      "regularFiles": 272
+    },
+    "afterPackage": {
+      "appBytes": 27094856,
+      "zipBytes": 11901304,
+      "regularFiles": 135
+    },
+    "beforeCatalog": {
+      "iterations": 2000,
+      "milliseconds": 3630.905032157898,
+      "resultCount": 50000
+    },
+    "afterCatalog": {
+      "iterations": 2000,
+      "milliseconds": 4.374980926513672,
+      "resultCount": 50000
+    },
+    "scope": "Catalog probe measures 2000 repeated derived-state reads in a debug build, not physical click latency or inference throughput. Bundle figures exclude downloaded model weights; no claim of lower model memory use.",
+    "beforeNavigation": {
+      "samples": 15,
+      "medianMilliseconds": 2.9469728469848633,
+      "maximumMilliseconds": 4.724025726318359
+    },
+    "afterNavigation": {
+      "samples": 15,
+      "medianMilliseconds": 2.5540590286254883,
+      "maximumMilliseconds": 4.250049591064453
+    },
+    "releaseScope": "Historical 0.4.0 before/after optimization measurements; current artifacts are in currentPackage."
+  },
+  "intelPackage": {
+    "appBytes": 27375764,
+    "zipBytes": 12413145,
+    "sha256": "9295311066127186157f265e8e6dc876246d80faf5118c02c676998ad0a73363",
+    "runtimeTested": false,
+    "artifact": "dist/Intel/Hearth-macOS-Intel.zip",
+    "validation": "Static archive verification only"
+  },
+  "historicalValidation04": {
+    "completedAt": "2026-10-02T23:38:27.521369+00:00",
+    "app": "Hearth 0.4.0",
+    "coreTests": {
+      "passed": 46,
+      "failed": 0,
+      "domainTests": 9,
+      "markdownTests": 6,
+      "discoveryTests": 2,
+      "appStateTests": 5,
+      "backgroundPersistenceTests": 1,
+      "navigationTests": 3,
+      "knowledgeMetadataTests": 2,
+      "assistantDiscoveryTests": 6,
+      "skipped": 0,
+      "recommendationTests": 12
+    },
+    "uiPassed": [
+      "model comparison",
+      "download confirmation and installation",
+      "streaming chat",
+      "conversation restoration",
+      "download lock",
+      "memory release",
+      "benchmark display",
+      "final streaming update batching",
+      "family filter",
+      "visible family and license labels",
+      "three-family comparison",
+      "default view shows four different families first",
+      "28 model groups preserve all 71 size variants",
+      "hardware fit, use-case, family and license filters",
+      "custom license checkbox initially unchecked and download disabled until accepted",
+      "nested lists, headings, quotations, tasks and tables",
+      "fenced code formatting with language labels",
+      "copy-code round trip preserves indentation and newlines",
+      "unfinished streaming code fence renders as code",
+      "manual scroll pauses automatic following during generation",
+      "Jump to latest returns to the newest reply",
+      "next-message draft stays editable and is preserved during generation",
+      "For you shortlist, full catalog browsing, and debounced search",
+      "recorded side-by-side example answers with visible provenance",
+      "live comparison of Qwen3 1.7B, Qwen3 4B, and Gemma 4 E2B on one question",
+      "Continue this chat preserves the selected prompt and response",
+      "custom license checkbox remains unchecked and download blocked before acceptance",
+      "typing and screen navigation remain usable during model loading",
+      "updated build reopened in the actual user app, with identical saved conversations and benchmarks",
+      "0.3.1 native sidebar navigation across all three retained screens",
+      "model browser scroll position 0.35 preserved after visiting Your Mac",
+      "chat scroll and unsent draft preserved across page switches; test draft cleared",
+      "knowledge cutoff on discovery, browse, chat, model details and comparison",
+      "publisher-source popovers for known and undocumented cutoffs",
+      "updated user app reopened; canonical saved-state hash unchanged (one conversation, eight messages, one benchmark)",
+      "0.4.0 empty and installed assistant home, shortlist, complete catalog, progressive filters/details, storage library",
+      "0.4.0 real one-click resumed setup verifies, installs, loads, and enters chat in isolated preview",
+      "0.4.0 custom-license terms remain unaccepted and block download until reviewed",
+      "0.4.0 final user app opened: selected Qwen3 4B, original conversation preserved, technical details expand, example comparisons and full catalog work, returned to assistant home"
+    ],
+    "releaseValidationScope": "0.4.0 ran all 32 checks with offline setup and native navigation probes enabled. The trimmed final Apple Silicon runtime also passed the extended offline integration and parent-crash cleanup suites. Both ZIPs were extracted and statically verified, including every original notice. Native UI checks covered the isolated first-use flow and the final real user app. Intel is cross-built, not tested on Intel hardware. The broader 12-configuration inference history below comes from earlier releases.",
+    "evidence": {
+      "unitTests": ".test-data/optimization/final-tests.log",
+      "offlineRegression": ".test-data/optimization/offline.log",
+      "newRuntimeSuite": ".test-data/smoke/catalog-report.json",
+      "newRuntimeLog": ".test-data/catalog-runtime.log",
+      "build": ".test-data/optimization/build-arm64.log",
+      "ui": "First-use setup and license gates reviewed in isolated preview; installed home, details, example comparison and full catalog reviewed in final user app. Original saved-state canonical hash unchanged.",
+      "packageVerification": ".test-data/optimization/package-arm64.log",
+      "processCleanup": ".test-data/optimization/cleanup.log",
+      "userDataPreserved": true
+    },
+    "packaging": "Both 0.4.0 ZIPs extracted outside the project: ad-hoc signatures, exact source catalog, 240 original notice documents and pinned notice hashes, runtime dependency closures, architecture consistency and macOS 14 deployment targets verified. Apple Silicon embedded llama.cpp b11146 executes and passes offline inference. Intel received static checks only. No Developer ID signing or notarization.",
+    "artifactSHA256": "ac6b0153c2ab09696e7ddb0a23b2e8071fd1a9179c6e927fcb1f76860a6f9da8"
+  },
+  "recommendations": {
+    "catalogConfigurations": 71,
+    "rankableConfigurations": 23,
+    "evidenceCheckedAt": "2026-10-02",
+    "goals": [
+      "Best answers",
+      "Balanced",
+      "Light & quick"
+    ],
+    "planner": "Published capability proxy subject to static hardware capacity, currently available memory, Metal allowance, storage, planned context and matching local tests. No parameter ceiling.",
+    "tuning": "Skippable first-use three-prompt benchmark; thinking budget adapted once to measured speed and first-answer delay, then benchmarked again. Full check adds six synthetic graded tasks.",
+    "measurementMatching": "Exact weights, engine, chip, profile and context, with at least three samples and a 30-day freshness limit.",
+    "calibration": [
+      {
+        "chip": "Apple M4",
+        "generatedTokens": 2354,
+        "checks": [
+          {
+            "name": "Follow a short instruction",
+            "passed": true
+          },
+          {
+            "name": "Calculate a result",
+            "passed": true
+          },
+          {
+            "name": "Read supplied facts",
+            "passed": true
+          },
+          {
+            "name": "Avoid inventing a fact",
+            "passed": true
+          },
+          {
+            "name": "Keep track of order",
+            "passed": true
+          },
+          {
+            "name": "Return structured data",
+            "passed": true
+          }
+        ],
+        "tokensPerSecond": 25.529382495725255,
+        "loadSeconds": 2.875080943107605,
+        "contextTokens": 16384,
+        "profileID": "v1-c16384-r768-t8-f16",
+        "sampleCount": 3,
+        "modelID": "qwen35-4",
+        "engineVersion": "b11146",
+        "firstTokenSeconds": 26.316668033599854,
+        "processMemoryBytes": 3396796416,
+        "modelSHA256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+        "date": 812686835.37055
+      },
+      {
+        "chip": "Apple M4",
+        "generatedTokens": 1118,
+        "checks": [
+          {
+            "name": "Follow a short instruction",
+            "passed": true
+          },
+          {
+            "name": "Calculate a result",
+            "passed": true
+          },
+          {
+            "name": "Read supplied facts",
+            "passed": true
+          },
+          {
+            "name": "Avoid inventing a fact",
+            "passed": true
+          },
+          {
+            "name": "Keep track of order",
+            "passed": true
+          },
+          {
+            "name": "Return structured data",
+            "passed": true
+          }
+        ],
+        "tokensPerSecond": 49.847780677776264,
+        "loadSeconds": 3.2378679513931274,
+        "profileID": "v1-c16384-r1792-t8-f16",
+        "contextTokens": 16384,
+        "sampleCount": 3,
+        "modelID": "gemma4-e2b",
+        "engineVersion": "b11146",
+        "firstTokenSeconds": 5.332657098770142,
+        "processMemoryBytes": 3304210432,
+        "modelSHA256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8",
+        "date": 812686964.391978
+      }
+    ],
+    "navigation": {
+      "samples": 15,
+      "medianMilliseconds": 1.504063606262207,
+      "maximumMilliseconds": 2.7430057525634766
+    },
+    "catalogReadProbe": {
+      "iterations": 2000,
+      "milliseconds": 53.401947021484375,
+      "resultCount": 50000
+    },
+    "measurementScope": "Calibration used this M4 with other apps running. Native navigation numbers are offscreen debug-hosting layout, not physical click-to-display latency. Catalog probe measures repeated derived-state reads, not inference.",
+    "userStateBefore": {
+      "conversations": 1,
+      "messages": 8,
+      "selectedModelID": "qwen3-4b",
+      "chatDigest": "2d8b662e069fce5e0431f7b2dfea9436c772ea9ee0ae738a0bbdda562c441141"
+    },
+    "userStateAfter": {
+      "conversations": 1,
+      "messages": 8,
+      "selectedModelID": "qwen3-4b",
+      "chatDigest": "2d8b662e069fce5e0431f7b2dfea9436c772ea9ee0ae738a0bbdda562c441141"
+    }
+  },
+  "currentPackage": {
+    "appBytes": 27774271,
+    "zipBytes": 12166586,
+    "sha256": "a575877f6c0de54f6c7ec3d4afe3b29e32e3604d9269859cc94276b2e13e9b22",
+    "runtimeTested": true
+  },
+  "historicalValidation05": {
+    "completedAt": "2026-10-03T02:31:52.839127+00:00",
+    "app": "Hearth 0.5.0 (7)",
+    "coreTests": {
+      "passed": 56,
+      "failed": 0,
+      "domainTests": 9,
+      "markdownTests": 6,
+      "discoveryTests": 2,
+      "appStateTests": 5,
+      "backgroundPersistenceTests": 1,
+      "navigationTests": 3,
+      "knowledgeMetadataTests": 2,
+      "assistantDiscoveryTests": 7,
+      "skipped": 0,
+      "recommendationTests": 12,
+      "contextOptimizationTests": 9
+    },
+    "uiPassed": [
+      "0.5.0 recommendation home with preference controls, current assistant, memory-constrained recommendation, and static hardware potential",
+      "Goal changes affect recommendations without silently changing the selected assistant",
+      "How we choose panel with all-model selector, reviewed source links, configuration details, and ranking limits",
+      "Chat menu indicates selected and recommended models",
+      "Real model switching from Qwen3 4B to Gemma 4 E2B in isolated preview",
+      "First-use speed check, automatic thinking-budget adjustment, repeated measurement, and matching measured performance display",
+      "Post-switch synthetic chat completes with correctly rendered bullet points and Python code block",
+      "Final real user app opened on Assistants; original conversation digest and selected assistant unchanged"
+    ],
+    "releaseValidationScope": "0.5.0 passed all 46 tests with offline setup and native navigation probes enabled. The final Apple Silicon runtime passed the extended offline regression and parent-crash cleanup suites. Qwen3.5 4B and Gemma 4 E2B completed real calibration and six graded checks. Native UI checks exercised first-use tuning and post-switch chat in an isolated preview; the real updated app retained the original conversation and selected assistant. Both ZIPs passed packaging checks. Intel was not runtime-tested. The 13-configuration total includes earlier release validation.",
+    "evidence": {
+      "unitTests": ".test-data/recommendation/tests.log",
+      "offlineRegression": ".test-data/recommendation/offline.log",
+      "build": ".test-data/recommendation/build-arm64.log",
+      "packageVerification": ".test-data/recommendation/package-arm64.log",
+      "processCleanup": ".test-data/recommendation/cleanup.log",
+      "hardwareMatrix": ".test-data/recommendation/hardware-matrix.json",
+      "calibration": ".test-data/recommendation/calibration-tuned.json",
+      "packageMetrics": ".test-data/recommendation/package-metrics.json",
+      "ui": "Native isolated preview exercised recommendations, switching, real tuning, measured performance, and formatted chat. Final real app reviewed and left on Assistants.",
+      "userDataPreserved": true,
+      "testProcessesStopped": true
+    },
+    "packaging": "Both 0.5.0 ZIPs extracted outside the project: ad-hoc signatures, exact source catalog and recommendation evidence, 240 original notice documents and pinned hashes, runtime dependency closures, architecture consistency and macOS 14 deployment targets verified. Apple Silicon embedded llama.cpp b11146 executes and passes offline inference. Intel received static checks only. No Developer ID signing or notarization.",
+    "artifactSHA256": "f7501cff4040c037c0d6802d9150c4255a62eba009402d41d5313dbf58206b90",
+    "currentPackage": {
+      "appleSilicon": {
+        "appBytes": 27482833,
+        "zipBytes": 12048791,
+        "sha256": "f7501cff4040c037c0d6802d9150c4255a62eba009402d41d5313dbf58206b90"
+      },
+      "intel": {
+        "appBytes": 27071766,
+        "zipBytes": 12288232,
+        "sha256": "fad481e4ca01214faa3b6428cebd56b133722b2ffecdd2cf86727d6b35679ef8"
+      },
+      "excludes": "Downloaded model weights"
+    }
+  },
+  "contextOptimizations": {
+    "research": "scripts/context-optimization-research.json",
+    "checkpointPolicy": "Two partial-state checkpoints per slot; fixed 512-token microbatch; profile identity revised to v2",
+    "contextTarget": "Everyday 4K/8K/16K by preference, with smaller fitting fallback; Longer chats targets up to 65536 within pinned native limits and budget",
+    "cachePolicy": "Q8 only on reviewed compatible Apple Silicon paths when meaningful memory savings or a fitting larger window justify it. Full precision remains selectable; Intel and unknown paths retain FP16.",
+    "reviewedGeometryModels": [
+      "qwen35-08",
+      "qwen35-2",
+      "qwen35-4",
+      "qwen35-9",
+      "qwen35-27",
+      "qwen35-35b-a3",
+      "gemma4-e2b",
+      "gemma4-e4b"
+    ],
+    "historyFitting": "Exact-tokenizer bisection over complete-turn boundaries; 1000-turn regression requires at most 12 fit checks",
+    "exploratoryComparison": {
+      "scope": "Exploratory 16K A/B run before the final checkpoint cap. No thinking; stochastic decoding and generated retrieval values varied. Other apps were running. These observations guide defaults, not a controlled quality or speed guarantee.",
+      "models": [
+        {
+          "modelID": "qwen3-4b",
+          "fullPrecisionRSSBytes": 4937482240,
+          "compactRSSBytes": 3844341760,
+          "differenceBytes": 1093140480,
+          "fullPrecisionSpeed": 27.576138868421495,
+          "compactSpeed": 30.550077049840162,
+          "fullPrecisionBasicChecks": 5,
+          "compactBasicChecks": 4,
+          "fullPrecisionRetrievedFacts": 0,
+          "compactRetrievedFacts": 0
+        },
+        {
+          "modelID": "qwen35-4",
+          "fullPrecisionRSSBytes": 3410395136,
+          "compactRSSBytes": 3236708352,
+          "differenceBytes": 173686784,
+          "fullPrecisionSpeed": 27.181553097246262,
+          "compactSpeed": 25.000810669850928,
+          "fullPrecisionBasicChecks": 5,
+          "compactBasicChecks": 5,
+          "fullPrecisionRetrievedFacts": 3,
+          "compactRetrievedFacts": 3
+        },
+        {
+          "modelID": "gemma4-e2b",
+          "fullPrecisionRSSBytes": 3435429888,
+          "compactRSSBytes": 3299770368,
+          "differenceBytes": 135659520,
+          "fullPrecisionSpeed": 46.94272466005643,
+          "compactSpeed": 42.61962919358579,
+          "fullPrecisionBasicChecks": 5,
+          "compactBasicChecks": 5,
+          "fullPrecisionRetrievedFacts": 3,
+          "compactRetrievedFacts": 3
+        },
+        {
+          "modelID": "smollm3-3b",
+          "fullPrecisionRSSBytes": 3222519808,
+          "compactRSSBytes": 2709159936,
+          "differenceBytes": 513359872,
+          "fullPrecisionSpeed": 35.771553527464,
+          "compactSpeed": 42.606551558618015,
+          "fullPrecisionBasicChecks": 4,
+          "compactBasicChecks": 4,
+          "fullPrecisionRetrievedFacts": 3,
+          "compactRetrievedFacts": 3
+        }
+      ]
+    },
+    "finalHybridRuntimeCheck": [
+      {
+        "cache": "q8_0",
+        "estimatedMemory": 4685883115.2,
+        "measurement": {
+          "checks": [
+            {
+              "name": "Follow a short instruction",
+              "passed": true
+            },
+            {
+              "name": "Calculate a result",
+              "passed": true
+            },
+            {
+              "name": "Read supplied facts",
+              "passed": true
+            },
+            {
+              "name": "Avoid inventing a fact",
+              "passed": true
+            },
+            {
+              "name": "Keep track of order",
+              "passed": true
+            },
+            {
+              "name": "Return structured data",
+              "passed": true
+            }
+          ],
+          "chip": "Apple M4",
+          "contextCheck": {
+            "firstAnswerSeconds": 82.19704902172089,
+            "matchedFacts": 3,
+            "promptTokens": 24560,
+            "response": "```json\n{\n  \"aurora\": \"badge-456789\",\n  \"cedar\": \"badge-456926\",\n  \"tulip\": \"badge-457063\"\n}\n```",
+            "totalFacts": 3,
+            "totalSeconds": 84.49088191986084,
+            "truncated": false
+          },
+          "contextTokens": 32768,
+          "date": 812690246.513725,
+          "engineVersion": "b11146",
+          "firstTokenSeconds": 0.3540310859680176,
+          "generatedTokens": 324,
+          "modelID": "qwen35-4",
+          "modelSHA256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+          "processMemoryBytes": 3559030784,
+          "profileID": "v2-c32768-r0-t8-p2-q8_0",
+          "sampleCount": 3,
+          "tokensPerSecond": 28.755453810114545
+        },
+        "processMemoryAfterLongInput": 3573874688,
+        "thinkingEnabled": false
+      }
+    ],
+    "finalNativeUIRuntimeCheck": {
+      "modelID": "gemma4-e2b",
+      "profile": {
+        "thinkingTokens": 1792,
+        "cacheType": "f16",
+        "cacheGeometry": {
+          "recurrentStateBytes": 0,
+          "slidingWindowTokens": 512,
+          "description": "3 full-attention and 12 sliding-window cache layers; 20 later layers share existing cache. Includes a 512-token microbatch and two partial-state checkpoints.",
+          "fullAttentionBytesPerToken": 6144,
+          "slidingAttentionBytesPerToken": 12288
+        },
+        "contextTokens": 49152,
+        "threads": 8
+      },
+      "measurement": {
+        "profileID": "v2-c49152-r1792-t8-p2-f16",
+        "sampleCount": 3,
+        "contextCheck": {
+          "truncated": false,
+          "totalSeconds": 88.63068294525146,
+          "totalFacts": 3,
+          "response": "```json\n{\n  \"aurora\": \"badge-683099\",\n  \"cedar\": \"badge-683236\",\n  \"tulip\": \"badge-683373\"\n}\n```",
+          "promptTokens": 32763,
+          "matchedFacts": 3,
+          "firstAnswerSeconds": 86.89197897911072
+        },
+        "loadSeconds": 7.722231984138489,
+        "processMemoryBytes": 3487727616,
+        "chip": "Apple M4",
+        "modelID": "gemma4-e2b",
+        "engineVersion": "b11146",
+        "contextTokens": 49152,
+        "generatedTokens": 1141,
+        "firstTokenSeconds": 5.555043935775757,
+        "date": 812690667.847497,
+        "tokensPerSecond": 54.669438682521594,
+        "checks": [
+          {
+            "name": "Follow a short instruction",
+            "passed": true
+          },
+          {
+            "name": "Calculate a result",
+            "passed": true
+          },
+          {
+            "name": "Read supplied facts",
+            "passed": true
+          },
+          {
+            "name": "Avoid inventing a fact",
+            "passed": true
+          },
+          {
+            "name": "Keep track of order",
+            "passed": true
+          },
+          {
+            "name": "Return structured data",
+            "passed": true
+          }
+        ],
+        "modelSHA256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8"
+      },
+      "syntheticChatCount": 0
+    },
+    "limitations": [
+      "Compression can affect answers and may reduce throughput; no universal speed or quality guarantee.",
+      "Cache byte savings do not equal total process memory savings.",
+      "The long test checks exact retrieval and structured output, not full long-document comprehension.",
+      "Final native UI exercised 49K configured / approximately 32K input; 64K maximum is covered by planner tests, not every model on every Mac.",
+      "TurboQuant, UltraQuant, DFlash, DSpark and arbitrary positional extrapolation were researched but are not implemented as universal modes."
+    ]
+  },
+  "historicalValidation06": {
+    "completedAt": "2026-10-03T03:32:46.955388+00:00",
+    "app": "Hearth 0.6.0 (8)",
+    "platform": "macOS 15.6, Apple M4, 16 GB unified memory",
+    "artifact": "dist/Hearth-macOS.zip",
+    "artifactSHA256": "33f012daf05bd8170504127cc9772931ba54f4100a0cbf5151bfb15c7b07272a",
+    "coreTests": {
+      "passed": 56,
+      "failed": 0,
+      "domainTests": 9,
+      "markdownTests": 6,
+      "discoveryTests": 2,
+      "appStateTests": 5,
+      "backgroundPersistenceTests": 1,
+      "navigationTests": 3,
+      "knowledgeMetadataTests": 2,
+      "assistantDiscoveryTests": 7,
+      "skipped": 0,
+      "recommendationTests": 12,
+      "contextOptimizationTests": 9
+    },
+    "integrationModels": [
+      "Qwen3 \u00b7 0.6B Q4_K_M",
+      "Qwen3 \u00b7 1.7B Q4_K_M",
+      "Qwen3 \u00b7 4B Q4_K_M",
+      "SmolLM3 \u00b7 3B Q4_K_M",
+      "Phi-4 mini \u00b7 3.8B Q4_K_M",
+      "Ministral 3 \u00b7 3B Q4_K_M",
+      "Qwen3.5 \u00b7 0.8B Q4_K_M",
+      "Gemma 4 \u00b7 E2B Q4_K_M",
+      "SmolLM2 \u00b7 0.135B Q4_K_M",
+      "Granite 3.3 \u00b7 2B Q4_K_M",
+      "OLMo 2 \u00b7 7B Q4_K_M",
+      "DeepSeek R1 \u00b7 Qwen distills \u00b7 1.5B Q4_K_M",
+      "Qwen3.5 \u00b7 4B Q4_K_M"
+    ],
+    "integrationPassed": [
+      "pinned model download",
+      "SHA-256 verification",
+      "pause and resume",
+      "authenticated loopback inference",
+      "multi-turn context",
+      "context trimming",
+      "oversized input rejection",
+      "stream cancellation and recovery",
+      "model switching and old-process termination",
+      "model deletion",
+      "three-prompt benchmark",
+      "conversation persistence",
+      "memory release",
+      "external networking denied by macOS sandbox",
+      "engine cleanup after parent crash",
+      "six additional exact weight configurations downloaded, verified, loaded, switched and unloaded",
+      "installed license documents and provenance preservation",
+      "reasoning separated from final answer in DeepSeek R1 streaming",
+      "three-model live local comparison, sequential model loading, and continuing the chosen answer as a saved conversation",
+      "local prompt-prefix reuse with auxiliary RAM archive disabled",
+      "offline regression with updated prompt reuse settings",
+      "0.5.0 extended offline regression against the final packaged runtime",
+      "Qwen3.5 4B and Gemma 4 E2B measured thinking-budget adjustment followed by a repeated three-prompt benchmark and six graded sanity checks"
+    ],
+    "uiPassed": [
+      "Final native preview shows Everyday / Longer chats and precision override with model-specific plans",
+      "Preference changes preserve the selected assistant and conversation; busy operation controls prevent conflicting changes",
+      "Old measurement marked stale after context or precision changes",
+      "First-use speed check and measured thinking-budget adjustment operate with final checkpoint policy",
+      "Real Gemma 4 E2B load and full calibration at a 49152-token FP16 window",
+      "Six of six basic checks and three of three exact facts from 32763 input tokens; final UI shows measured performance, check span, latency and limits",
+      "Configuration disclosure describes shared/sliding/recurrent layout and two-checkpoint limit",
+      "Final real user app reopened with original conversation digest and selected assistant preserved; left on Performance & why with new memory controls visible"
+    ],
+    "packaging": "Both 0.6.0 ZIPs extracted and verified: ad-hoc signatures, exact catalog and recommendation evidence including reviewed cache geometry, 240 original notice documents and hashes, dependency closures, architecture consistency, and macOS 14 deployment targets. Apple Silicon runtime tested. Intel statically verified only. Neither package is Developer ID signed or notarized.",
+    "limits": [
+      "Apple Silicon runtime-tested on this M4; Intel cross-built and statically verified, not runtime-tested on Intel hardware. macOS 14+ required.",
+      "71 pinned configurations across 12 families; 13 exact configurations have actual runtime coverage across this and earlier validation runs. Most large configurations were not run on this 16 GB Mac.",
+      "23 configurations have enough reviewed upstream benchmark dimensions for automatic capability ranking. Different evaluation setups and quantizations make the ranking approximate, not proof of the globally smartest model.",
+      "The six synthetic graded checks test basic behavior, not overall intelligence or factual accuracy. Speed observations vary with prompts and current machine conditions.",
+      "Hardware memory counters and runtime memory estimates are approximate; generated hardware-matrix cases are planner tests, not physical hardware measurements.",
+      "License acknowledgement preserves and presents publisher conditions; it does not certify future use.",
+      "No fine-tuning, model merging, automatic multi-model routing, or exact-quantization quality leaderboard.",
+      "Not Developer ID signed or notarized.",
+      "0.6 optimizations use reviewed cache geometry for Qwen3.5 and Gemma 4; other architectures retain conservative cache estimates. Quantization compatibility is not a quality certification."
+    ],
+    "catalog": {
+      "configurations": 71,
+      "families": [
+        "Qwen",
+        "SmolLM",
+        "Phi",
+        "Mistral",
+        "Llama",
+        "Gemma",
+        "Granite",
+        "OLMo",
+        "DeepSeek",
+        "Liquid",
+        "Falcon",
+        "gpt-oss"
+      ],
+      "newFamilyChecks": [
+        {
+          "answer": "2 + 2 = 4.",
+          "benchmarkPrompts": 3,
+          "family": "Qwen",
+          "followup": "Green.",
+          "medianFirstTokenSeconds": 0.04258298873901367,
+          "medianTokensPerSecond": 153.45147785577134,
+          "modelID": "qwen3-06b",
+          "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+        },
+        {
+          "answer": "\nThe sum of 2 and 2 is 4.",
+          "benchmarkPrompts": 3,
+          "family": "SmolLM",
+          "followup": "\nYou mentioned that your favorite color is green in your previous message.",
+          "medianFirstTokenSeconds": 0.26094603538513184,
+          "medianTokensPerSecond": 38.80571872821313,
+          "modelID": "smollm3-3b",
+          "sha256": "4de907d2d388a5508fb7cb443a06effe14cce3518b0a78d3bdd9e74d9edce989"
+        },
+        {
+          "answer": "2 + 2 equals 4.",
+          "benchmarkPrompts": 3,
+          "family": "Phi",
+          "followup": "You said your favorite color is green.",
+          "medianFirstTokenSeconds": 0.22159194946289062,
+          "medianTokensPerSecond": 31.454398985071393,
+          "modelID": "phi4-mini",
+          "sha256": "88c00229914083cd112853aab84ed51b87bdf6b9ce42f532d8c85c7c63b1730a"
+        },
+        {
+          "answer": "4",
+          "benchmarkPrompts": 3,
+          "family": "Mistral",
+          "followup": "Green.",
+          "medianFirstTokenSeconds": 0.19940602779388428,
+          "medianTokensPerSecond": 33.81427530163586,
+          "modelID": "ministral3-3b",
+          "sha256": "fd46fc371ff0509bfa8657ac956b7de8534d7d9baaa4947975c0648c3aa397f4"
+        }
+      ],
+      "qualityObservations": [
+        "Phi missed an initial implicit history-recall prompt; it passed after explicitly referring to the previous message. Compatibility results do not establish answer quality.",
+        "Qwen3.5 0.8B and SmolLM2 135M loaded and streamed correctly but failed the arithmetic and recall probes. Sub-1B catalog entries warn about limited answer quality.",
+        "The recall probe checks for the expected color word, not semantic correctness. DeepSeek R1 included green while misstating whose preference it was. Runtime compatibility must not be interpreted as answer accuracy.",
+        "Measured speeds are observations on this Mac with other applications running, not a controlled cross-model ranking."
+      ],
+      "modelGroups": 28,
+      "testedConfigurations": 13,
+      "newArchitectureChecks": [
+        {
+          "architecture": "qwen35",
+          "arithmeticAnswer": "Wait, I don't know your favorite color yet, but I can't answer math questions.",
+          "arithmeticMatched": false,
+          "formattedAnswer": "*   Python is a widely used programming language for creating web applications and data processing scripts.\n*   It is well-known for its readability and ease of learning, making it suitable for beginners to learn.\n\n```python\nprint(\"hello\")\n```",
+          "id": "qwen35-08",
+          "recallAnswer": "I can't see your previous messages. Please share your favorite color or any other information I can help with.",
+          "recallMatched": false,
+          "runtimePassed": true,
+          "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+          "thinkingSeparated": false,
+          "tokensPerSecond": 110.06940847404951
+        },
+        {
+          "architecture": "llama",
+          "arithmeticAnswer": "1 + 1 = 2",
+          "arithmeticMatched": false,
+          "formattedAnswer": "Here are two Markdown bullet points:\n\n* Python is a high-level programming language that is widely used for scripting and data analysis.\n* It is a versatile language that can be used for tasks such as web development, data analysis, machine learning, and more.\n\nHere's a Python code block that prints \"Hello\":\n\n```python\nprint(\"Hello\")\n```",
+          "id": "smollm2-135m",
+          "recallAnswer": "2 + 2 = 4",
+          "recallMatched": false,
+          "runtimePassed": true,
+          "sha256": "2e8040ceae7815abe0dcb3540b9995eaa1fa0d2ca9e797d0a635ae4433c68c2d",
+          "thinkingSeparated": false,
+          "tokensPerSecond": 325.45329541802437
+        },
+        {
+          "architecture": "granite",
+          "arithmeticAnswer": "2 + 2 equals 4.",
+          "arithmeticMatched": true,
+          "formattedAnswer": "- Python is a high-level, interpreted programming language known for its readability and simplicity.\n- It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.\n\n```python\nprint(\"hello\")\n```",
+          "id": "granite33-2b",
+          "recallAnswer": "You mentioned that your favorite color is green.",
+          "recallMatched": true,
+          "runtimePassed": true,
+          "sha256": "ac71e9e32c0bea919b409c5918f69ca74339854b0319c5065e4e9fb6d95c4852",
+          "thinkingSeparated": false,
+          "tokensPerSecond": 36.55494911832274
+        },
+        {
+          "architecture": "qwen2",
+          "arithmeticAnswer": "\n\n2 + 2 = 4",
+          "arithmeticMatched": true,
+          "formattedAnswer": "\n\n1. Python is a versatile programming language, widely used for web development, automation, and data analysis.  \n2. Python's simplicity and readability make it a favorite among developers.  \n`print('hello')`",
+          "id": "deepseek-r1-15b",
+          "recallAnswer": "\n\nI don't have a favorite color, but I do value green.",
+          "recallMatched": true,
+          "runtimePassed": true,
+          "sha256": "1741e5b2d062b07acf048bf0d2c514dadf2a48f94e2b4aa0cfe069af3838ee2f",
+          "thinkingSeparated": true,
+          "tokensPerSecond": 57.00447954188603
+        },
+        {
+          "architecture": "gemma4",
+          "arithmeticAnswer": "4",
+          "arithmeticMatched": true,
+          "formattedAnswer": "* Python is a high-level, interpreted programming language.\n* It is widely used for web development, data science, and automation.\n\n```python\nprint(\"hello\")\n```",
+          "id": "gemma4-e2b",
+          "recallAnswer": "You mentioned green.",
+          "recallMatched": true,
+          "runtimePassed": true,
+          "sha256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8",
+          "thinkingSeparated": false,
+          "tokensPerSecond": 47.26973729221529
+        },
+        {
+          "architecture": "olmo2",
+          "arithmeticAnswer": "2 + 2 equals 4.",
+          "arithmeticMatched": true,
+          "formattedAnswer": "- **Python is an interpreted, high-level, general-purpose programming language.**\n- **It is designed to be easy to read and write, which makes it ideal for beginners.**\n\n```python\nprint(\"Hello, world!\")\n```",
+          "id": "olmo2-7b",
+          "recallAnswer": "You mentioned your favorite color is green.",
+          "recallMatched": true,
+          "runtimePassed": true,
+          "sha256": "88790198b8ab4f251b5b462756adc0265b3f6b9d9d87708d847645d9568bf168",
+          "thinkingSeparated": false,
+          "tokensPerSecond": 13.079802341975627
+        }
+      ],
+      "recordedExamples": {
+        "models": 3,
+        "promptsPerModel": 3,
+        "resource": "Sources/HearthCore/discovery-examples.json",
+        "notes": "Exact weight digests, same prompts, reference hardware and timing. Examples are not comprehensive quality evaluations."
+      }
+    },
+    "evidence": {
+      "unitTests": ".test-data/context-optimization/tests.log",
+      "offlineRegression": ".test-data/context-optimization/offline.log",
+      "processCleanup": ".test-data/context-optimization/cleanup.log",
+      "build": ".test-data/context-optimization/build-arm64.log",
+      "packageVerification": ".test-data/context-optimization/package-arm64.log",
+      "exploratoryCacheProbe": ".test-data/context-optimization/cache-probe-16384.json",
+      "finalHybridCheck": ".test-data/context-optimization/cache-probe-32768-compact.json",
+      "finalNativeUICheck": ".test-data/context-optimization/ui-long-context-result.json",
+      "packageMetrics": ".test-data/context-optimization/package-metrics.json",
+      "userDataPreserved": true,
+      "userStateAfter": ".test-data/context-optimization/user-state-after.json",
+      "ui": "Isolated preview exercised full 49K FP16 calibration, then exited. Real app left on Performance & why with new controls. An outdated real app process required a normal SIGTERM restart after UI-selection timeouts; saved conversation verified before and after."
+    },
+    "performance": {
+      "baselineLifecycle": {
+        "mainActorSamples": 312,
+        "maximumMainActorDelayMilliseconds": 140.8143749088049,
+        "modelID": "qwen3-06b",
+        "unloadMilliseconds": [
+          140.94166667200625,
+          117.68162506632507,
+          140.61283343471587
+        ]
+      },
+      "updatedLifecycle": {
+        "mainActorSamples": 286,
+        "maximumMainActorDelayMilliseconds": 5.156791778281331,
+        "modelID": "qwen3-06b",
+        "unloadMilliseconds": [
+          58.61583328805864,
+          55.494208354502916,
+          51.694958470761776
+        ]
+      },
+      "promptReuse": [
+        {
+          "answer": "OK.",
+          "firstTokenSeconds": 0.9325649738311768,
+          "reusePrompt": false,
+          "totalSeconds": 0.9804392918013036
+        },
+        {
+          "answer": "OK.",
+          "firstTokenSeconds": 0.918755054473877,
+          "reusePrompt": false,
+          "totalSeconds": 0.9624430416151881
+        },
+        {
+          "answer": "OK.",
+          "firstTokenSeconds": 0.017966032028198242,
+          "reusePrompt": true,
+          "totalSeconds": 0.04798970837146044
+        },
+        {
+          "answer": "OK.",
+          "firstTokenSeconds": 0.017814993858337402,
+          "reusePrompt": true,
+          "totalSeconds": 0.04407820827327669
+        }
+      ],
+      "scope": "Lifecycle probe measures main-actor scheduling delay during three unload/load cycles. Prompt probe uses the same long input repeatedly. Neither establishes speedup for every click or overall generation throughput.",
+      "changes": [
+        "property-level observation",
+        "live reply and composer isolated from unrelated views",
+        "serial background conversation saving and hardware scans",
+        "nonblocking interactive engine unload",
+        "debounced catalog search",
+        "in-memory matching prompt-prefix reuse; no auxiliary prompt archive",
+        "cancellable background model integrity verification"
+      ],
+      "releaseScope": "Historical lifecycle and prompt-reuse probes from releases before 0.5.0."
+    },
+    "releaseValidationScope": "0.6.0 passed all 56 tests with offline setup and native navigation enabled. The completed packaged Apple Silicon runtime passed the extended external-network-denied regression and crash guardian checks. Exploratory A/B runs covered four existing models at 16K; final v2 Qwen3.5 Q8 ran at 32K, and native Gemma FP16 ran at 49K. Exact retrieval covered about 24K and 32K input tokens respectively. Both archives passed static verification. The real user app was opened with unchanged saved chats. Broader 13-weight runtime coverage includes prior releases; Intel is not runtime-tested.",
+    "knowledgeCutoffs": {
+      "reviewedAt": "2026-10-02",
+      "configurations": 71,
+      "publisherDates": 22,
+      "notDocumented": 49,
+      "maintainerSource": "scripts/model-knowledge.json",
+      "policy": "Only dates established by the reviewed publisher source. Preserve approximate precision; do not infer from release dates, base models, or chat outputs."
+    },
+    "sidebarNavigation": {
+      "scope": "Offscreen native hosting layout, debug build, 16 synthetic messages, 6 cycles across Chat/Your Mac/Models, first cycle excluded, 1 ms run-loop interval included. Not physical click-to-display latency.",
+      "before": {
+        "report": ".test-data/navigation/before-layout.json",
+        "samples": 15,
+        "medianMilliseconds": 48.03597927093506,
+        "maximumMilliseconds": 113.01994323730469
+      },
+      "after": {
+        "report": ".test-data/navigation/final-layout.json",
+        "samples": 15,
+        "medianMilliseconds": 1.5889406204223633,
+        "maximumMilliseconds": 5.435943603515625
+      },
+      "current": {
+        "report": ".test-data/context-optimization/navigation.json",
+        "samples": 15,
+        "medianMilliseconds": 1.423954963684082,
+        "maximumMilliseconds": 2.213001251220703
+      }
+    },
+    "efficiency": {
+      "changes": [
+        "Single-result caches for recommendations and filtered/grouped catalog, with observation-preserving invalidation",
+        "Prepared search index and constant catalog metadata",
+        "Release inactive native views and Markdown cache under macOS memory pressure",
+        "Skip unchanged installed license/provenance writes; repair altered files and permissions",
+        "Stage-only debug/local symbol stripping and transitive runtime dependency pruning",
+        "Share identical bundled original notices using internal relative symlinks",
+        "Separate architecture-specific app downloads"
+      ],
+      "beforePackage": {
+        "appBytes": 37738566,
+        "zipBytes": 13815821,
+        "regularFiles": 272
+      },
+      "afterPackage": {
+        "appBytes": 27094856,
+        "zipBytes": 11901304,
+        "regularFiles": 135
+      },
+      "beforeCatalog": {
+        "iterations": 2000,
+        "milliseconds": 3630.905032157898,
+        "resultCount": 50000
+      },
+      "afterCatalog": {
+        "iterations": 2000,
+        "milliseconds": 4.374980926513672,
+        "resultCount": 50000
+      },
+      "scope": "Catalog probe measures 2000 repeated derived-state reads in a debug build, not physical click latency or inference throughput. Bundle figures exclude downloaded model weights; no claim of lower model memory use.",
+      "beforeNavigation": {
+        "samples": 15,
+        "medianMilliseconds": 2.9469728469848633,
+        "maximumMilliseconds": 4.724025726318359
+      },
+      "afterNavigation": {
+        "samples": 15,
+        "medianMilliseconds": 2.5540590286254883,
+        "maximumMilliseconds": 4.250049591064453
+      },
+      "releaseScope": "Historical 0.4.0 before/after optimization measurements; current artifacts are in currentPackage."
+    },
+    "intelPackage": {
+      "artifact": "dist/Intel/Hearth-macOS-Intel.zip",
+      "artifactSHA256": "ef5e610015638d814f7813c41e1f638f04c1cdda195add2b9d7a5c87b9a5a683",
+      "zipBytes": 12340400,
+      "appBytes": 27196532,
+      "architecture": "x86_64",
+      "runtimeTested": false,
+      "staticChecks": ".test-data/context-optimization/package-intel.log"
+    },
+    "recommendations": {
+      "catalogConfigurations": 71,
+      "rankableConfigurations": 23,
+      "evidenceCheckedAt": "2026-10-02",
+      "goals": [
+        "Best answers",
+        "Balanced",
+        "Light & quick"
+      ],
+      "planner": "Published capability proxy subject to static hardware capacity, currently available memory, Metal allowance, storage, planned context and matching local tests. No parameter ceiling.",
+      "tuning": "Skippable first-use three-prompt benchmark; thinking budget adapted once to measured speed and first-answer delay, then benchmarked again. Full check adds six synthetic graded tasks.",
+      "measurementMatching": "Exact weights, engine, chip, profile and context, with at least three samples and a 30-day freshness limit.",
+      "calibration": [
+        {
+          "chip": "Apple M4",
+          "generatedTokens": 2354,
+          "checks": [
+            {
+              "name": "Follow a short instruction",
+              "passed": true
+            },
+            {
+              "name": "Calculate a result",
+              "passed": true
+            },
+            {
+              "name": "Read supplied facts",
+              "passed": true
+            },
+            {
+              "name": "Avoid inventing a fact",
+              "passed": true
+            },
+            {
+              "name": "Keep track of order",
+              "passed": true
+            },
+            {
+              "name": "Return structured data",
+              "passed": true
+            }
+          ],
+          "tokensPerSecond": 25.529382495725255,
+          "loadSeconds": 2.875080943107605,
+          "contextTokens": 16384,
+          "profileID": "v1-c16384-r768-t8-f16",
+          "sampleCount": 3,
+          "modelID": "qwen35-4",
+          "engineVersion": "b11146",
+          "firstTokenSeconds": 26.316668033599854,
+          "processMemoryBytes": 3396796416,
+          "modelSHA256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+          "date": 812686835.37055
+        },
+        {
+          "chip": "Apple M4",
+          "generatedTokens": 1118,
+          "checks": [
+            {
+              "name": "Follow a short instruction",
+              "passed": true
+            },
+            {
+              "name": "Calculate a result",
+              "passed": true
+            },
+            {
+              "name": "Read supplied facts",
+              "passed": true
+            },
+            {
+              "name": "Avoid inventing a fact",
+              "passed": true
+            },
+            {
+              "name": "Keep track of order",
+              "passed": true
+            },
+            {
+              "name": "Return structured data",
+              "passed": true
+            }
+          ],
+          "tokensPerSecond": 49.847780677776264,
+          "loadSeconds": 3.2378679513931274,
+          "profileID": "v1-c16384-r1792-t8-f16",
+          "contextTokens": 16384,
+          "sampleCount": 3,
+          "modelID": "gemma4-e2b",
+          "engineVersion": "b11146",
+          "firstTokenSeconds": 5.332657098770142,
+          "processMemoryBytes": 3304210432,
+          "modelSHA256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8",
+          "date": 812686964.391978
+        }
+      ],
+      "navigation": {
+        "samples": 15,
+        "medianMilliseconds": 1.504063606262207,
+        "maximumMilliseconds": 2.7430057525634766
+      },
+      "catalogReadProbe": {
+        "iterations": 2000,
+        "milliseconds": 53.401947021484375,
+        "resultCount": 50000
+      },
+      "measurementScope": "Calibration used this M4 with other apps running. Native navigation numbers are offscreen debug-hosting layout, not physical click-to-display latency. Catalog probe measures repeated derived-state reads, not inference.",
+      "userStateBefore": {
+        "conversations": 1,
+        "messages": 8,
+        "selectedModelID": "qwen3-4b",
+        "chatDigest": "2d8b662e069fce5e0431f7b2dfea9436c772ea9ee0ae738a0bbdda562c441141"
+      },
+      "userStateAfter": {
+        "conversations": 1,
+        "messages": 8,
+        "selectedModelID": "qwen3-4b",
+        "chatDigest": "2d8b662e069fce5e0431f7b2dfea9436c772ea9ee0ae738a0bbdda562c441141"
+      }
+    },
+    "currentPackage": {
+      "appleSilicon": {
+        "appBytes": 27603279,
+        "zipBytes": 12100378,
+        "sha256": "33f012daf05bd8170504127cc9772931ba54f4100a0cbf5151bfb15c7b07272a"
+      },
+      "intel": {
+        "appBytes": 27196532,
+        "zipBytes": 12340400,
+        "sha256": "ef5e610015638d814f7813c41e1f638f04c1cdda195add2b9d7a5c87b9a5a683"
+      },
+      "excludes": "Downloaded model weights"
+    },
+    "contextOptimizations": {
+      "research": "scripts/context-optimization-research.json",
+      "checkpointPolicy": "Two partial-state checkpoints per slot; fixed 512-token microbatch; profile identity revised to v2",
+      "contextTarget": "Everyday 4K/8K/16K by preference, with smaller fitting fallback; Longer chats targets up to 65536 within pinned native limits and budget",
+      "cachePolicy": "Q8 only on reviewed compatible Apple Silicon paths when meaningful memory savings or a fitting larger window justify it. Full precision remains selectable; Intel and unknown paths retain FP16.",
+      "reviewedGeometryModels": [
+        "qwen35-08",
+        "qwen35-2",
+        "qwen35-4",
+        "qwen35-9",
+        "qwen35-27",
+        "qwen35-35b-a3",
+        "gemma4-e2b",
+        "gemma4-e4b"
+      ],
+      "historyFitting": "Exact-tokenizer bisection over complete-turn boundaries; 1000-turn regression requires at most 12 fit checks",
+      "exploratoryComparison": {
+        "scope": "Exploratory 16K A/B run before the final checkpoint cap. No thinking; stochastic decoding and generated retrieval values varied. Other apps were running. These observations guide defaults, not a controlled quality or speed guarantee.",
+        "models": [
+          {
+            "modelID": "qwen3-4b",
+            "fullPrecisionRSSBytes": 4937482240,
+            "compactRSSBytes": 3844341760,
+            "differenceBytes": 1093140480,
+            "fullPrecisionSpeed": 27.576138868421495,
+            "compactSpeed": 30.550077049840162,
+            "fullPrecisionBasicChecks": 5,
+            "compactBasicChecks": 4,
+            "fullPrecisionRetrievedFacts": 0,
+            "compactRetrievedFacts": 0
+          },
+          {
+            "modelID": "qwen35-4",
+            "fullPrecisionRSSBytes": 3410395136,
+            "compactRSSBytes": 3236708352,
+            "differenceBytes": 173686784,
+            "fullPrecisionSpeed": 27.181553097246262,
+            "compactSpeed": 25.000810669850928,
+            "fullPrecisionBasicChecks": 5,
+            "compactBasicChecks": 5,
+            "fullPrecisionRetrievedFacts": 3,
+            "compactRetrievedFacts": 3
+          },
+          {
+            "modelID": "gemma4-e2b",
+            "fullPrecisionRSSBytes": 3435429888,
+            "compactRSSBytes": 3299770368,
+            "differenceBytes": 135659520,
+            "fullPrecisionSpeed": 46.94272466005643,
+            "compactSpeed": 42.61962919358579,
+            "fullPrecisionBasicChecks": 5,
+            "compactBasicChecks": 5,
+            "fullPrecisionRetrievedFacts": 3,
+            "compactRetrievedFacts": 3
+          },
+          {
+            "modelID": "smollm3-3b",
+            "fullPrecisionRSSBytes": 3222519808,
+            "compactRSSBytes": 2709159936,
+            "differenceBytes": 513359872,
+            "fullPrecisionSpeed": 35.771553527464,
+            "compactSpeed": 42.606551558618015,
+            "fullPrecisionBasicChecks": 4,
+            "compactBasicChecks": 4,
+            "fullPrecisionRetrievedFacts": 3,
+            "compactRetrievedFacts": 3
+          }
+        ]
+      },
+      "finalHybridRuntimeCheck": [
+        {
+          "cache": "q8_0",
+          "estimatedMemory": 4685883115.2,
+          "measurement": {
+            "checks": [
+              {
+                "name": "Follow a short instruction",
+                "passed": true
+              },
+              {
+                "name": "Calculate a result",
+                "passed": true
+              },
+              {
+                "name": "Read supplied facts",
+                "passed": true
+              },
+              {
+                "name": "Avoid inventing a fact",
+                "passed": true
+              },
+              {
+                "name": "Keep track of order",
+                "passed": true
+              },
+              {
+                "name": "Return structured data",
+                "passed": true
+              }
+            ],
+            "chip": "Apple M4",
+            "contextCheck": {
+              "firstAnswerSeconds": 82.19704902172089,
+              "matchedFacts": 3,
+              "promptTokens": 24560,
+              "response": "```json\n{\n  \"aurora\": \"badge-456789\",\n  \"cedar\": \"badge-456926\",\n  \"tulip\": \"badge-457063\"\n}\n```",
+              "totalFacts": 3,
+              "totalSeconds": 84.49088191986084,
+              "truncated": false
+            },
+            "contextTokens": 32768,
+            "date": 812690246.513725,
+            "engineVersion": "b11146",
+            "firstTokenSeconds": 0.3540310859680176,
+            "generatedTokens": 324,
+            "modelID": "qwen35-4",
+            "modelSHA256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+            "processMemoryBytes": 3559030784,
+            "profileID": "v2-c32768-r0-t8-p2-q8_0",
+            "sampleCount": 3,
+            "tokensPerSecond": 28.755453810114545
+          },
+          "processMemoryAfterLongInput": 3573874688,
+          "thinkingEnabled": false
+        }
+      ],
+      "finalNativeUIRuntimeCheck": {
+        "modelID": "gemma4-e2b",
+        "profile": {
+          "thinkingTokens": 1792,
+          "cacheType": "f16",
+          "cacheGeometry": {
+            "recurrentStateBytes": 0,
+            "slidingWindowTokens": 512,
+            "description": "3 full-attention and 12 sliding-window cache layers; 20 later layers share existing cache. Includes a 512-token microbatch and two partial-state checkpoints.",
+            "fullAttentionBytesPerToken": 6144,
+            "slidingAttentionBytesPerToken": 12288
+          },
+          "contextTokens": 49152,
+          "threads": 8
+        },
+        "measurement": {
+          "profileID": "v2-c49152-r1792-t8-p2-f16",
+          "sampleCount": 3,
+          "contextCheck": {
+            "truncated": false,
+            "totalSeconds": 88.63068294525146,
+            "totalFacts": 3,
+            "response": "```json\n{\n  \"aurora\": \"badge-683099\",\n  \"cedar\": \"badge-683236\",\n  \"tulip\": \"badge-683373\"\n}\n```",
+            "promptTokens": 32763,
+            "matchedFacts": 3,
+            "firstAnswerSeconds": 86.89197897911072
+          },
+          "loadSeconds": 7.722231984138489,
+          "processMemoryBytes": 3487727616,
+          "chip": "Apple M4",
+          "modelID": "gemma4-e2b",
+          "engineVersion": "b11146",
+          "contextTokens": 49152,
+          "generatedTokens": 1141,
+          "firstTokenSeconds": 5.555043935775757,
+          "date": 812690667.847497,
+          "tokensPerSecond": 54.669438682521594,
+          "checks": [
+            {
+              "name": "Follow a short instruction",
+              "passed": true
+            },
+            {
+              "name": "Calculate a result",
+              "passed": true
+            },
+            {
+              "name": "Read supplied facts",
+              "passed": true
+            },
+            {
+              "name": "Avoid inventing a fact",
+              "passed": true
+            },
+            {
+              "name": "Keep track of order",
+              "passed": true
+            },
+            {
+              "name": "Return structured data",
+              "passed": true
+            }
+          ],
+          "modelSHA256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8"
+        },
+        "syntheticChatCount": 0
+      },
+      "limitations": [
+        "Compression can affect answers and may reduce throughput; no universal speed or quality guarantee.",
+        "Cache byte savings do not equal total process memory savings.",
+        "The long test checks exact retrieval and structured output, not full long-document comprehension.",
+        "Final native UI exercised 49K configured / approximately 32K input; 64K maximum is covered by planner tests, not every model on every Mac.",
+        "TurboQuant, UltraQuant, DFlash, DSpark and arbitrary positional extrapolation were researched but are not implemented as universal modes."
+      ]
+    }
+  },
+  "adaptiveOptimization": {
+    "version": "0.7.0 (9)",
+    "completedAt": "2026-10-03T04:26:10.772363+00:00",
+    "tests": {
+      "passed": 64,
+      "skipped": 0,
+      "failed": 0
+    },
+    "artifacts": {
+      "arm64": {
+        "appBytes": 27774271,
+        "zipBytes": 12166586,
+        "sha256": "a575877f6c0de54f6c7ec3d4afe3b29e32e3604d9269859cc94276b2e13e9b22",
+        "runtimeTested": true
+      },
+      "x86_64": {
+        "appBytes": 27375764,
+        "zipBytes": 12413145,
+        "sha256": "9295311066127186157f265e8e6dc876246d80faf5118c02c676998ad0a73363",
+        "runtimeTested": false
+      }
+    },
+    "offlineRegression": "passed with external network denied",
+    "guardianCrashCleanup": "passed with newly built release smoke harness",
+    "userStateUnchanged": {
+      "conversations": 1,
+      "messages": 8,
+      "selectedModelID": "qwen3-4b",
+      "conversationSHA256": "2d8b662e069fce5e0431f7b2dfea9436c772ea9ee0ae738a0bbdda562c441141"
+    },
+    "nativeUI": "Ran Tune for this Mac to completion in isolated preview, inspected results and trial details, confirmed zero saved test conversations, opened final real app and its tuning entry point.",
+    "models": [
+      {
+        "id": "qwen3-17b-direct",
+        "thinkingTokens": 0,
+        "trialCount": 6,
+        "improvement": 0,
+        "summary": "The apparent speedup did not survive the repeat and answer checks. Your previous settings are kept."
+      },
+      {
+        "id": "qwen35-08-direct",
+        "thinkingTokens": 0,
+        "trialCount": 3,
+        "improvement": 0,
+        "summary": "Your current settings remain the best verified option in this check."
+      },
+      {
+        "id": "deepseek-r1-15b",
+        "thinkingTokens": 512,
+        "trialCount": 4,
+        "improvement": 0,
+        "summary": "Kept your current execution settings. No consistent speedup passed this check."
+      },
+      {
+        "id": "qwen3-06b-cpu-direct",
+        "thinkingTokens": 0,
+        "trialCount": 3,
+        "improvement": 0,
+        "summary": "Kept your current execution settings. No consistent speedup passed this check."
+      }
+    ],
+    "navigation": {
+      "warmMedianMilliseconds": 1.5099048614501953,
+      "warmMaxMilliseconds": 3.484010696411133,
+      "scope": "Native offscreen hosting/layout measurement, not physical click-to-photon latency"
+    },
+    "limitations": [
+      "No consistent additional execution speedup verified on this M4 under its current system conditions. Defaults retained.",
+      "Exact greedy matching and six basic checks do not establish general intelligence or stochastic answer equivalence.",
+      "Intel package statically verified; not executed on Intel hardware.",
+      "No Windows/Linux/phone builds or target-specific draft-weight downloads.",
+      "Public distribution signing and notarization remain outstanding."
+    ]
+  },
+  "mvpUX": {
+    "tests": {
+      "passed": 71,
+      "failed": 0,
+      "skipped": 0,
+      "log": ".test-data/mvp-ux-tests.log"
+    },
+    "offlineLog": ".test-data/mvp-ux-offline.log",
+    "nativeNavigation": {
+      "warmMedianMs": 3.50797176361084,
+      "warmMaxMs": 9.0559720993042,
+      "report": ".test-data/mvp-ux-navigation.json"
+    },
+    "verifiedJourneys": [
+      "setup goes directly to chat without synthetic benchmarks",
+      "per-conversation and new-chat drafts persist across restart",
+      "conversation navigation during generation preserves response ownership",
+      "retry preserves earlier answers and original question",
+      "continue preserves unsent draft",
+      "edit branches conversation without deleting original",
+      "starter fills draft without sending",
+      "returning assistant home prioritizes chosen model",
+      "about panel progressively reveals performance and knowledge limits",
+      "passive timing is distinct from controlled benchmarks",
+      "idle or memory-pressure release never interrupts active requests"
+    ],
+    "uiTestData": ".test-data/mvp-ux-preview/data",
+    "uiConfirmedSavedDrafts": 4,
+    "uiTestBenchmarks": 0,
+    "userConversationsUsedForInference": false,
+    "artifacts": {
+      "arm64": {
+        "app": "dist/Hearth.app",
+        "zip": "dist/Hearth-macOS.zip",
+        "zipBytes": 12203856,
+        "appBytes": 27848400,
+        "sha256": "cecd3b1be3f75e314daadf876b1c8aa8a09ad7c94b538823e38ab66346041936",
+        "runtimeTested": true,
+        "packageVerified": true
+      },
+      "x86_64": {
+        "app": "dist/Intel/Hearth.app",
+        "zip": "dist/Intel/Hearth-macOS-Intel.zip",
+        "zipBytes": 12449645,
+        "appBytes": 27462181,
+        "sha256": "294b0ff444fcf567d8fb9bcf61c32c7ed7e4b6b55edf9586296f27f5eb69a641",
+        "runtimeTested": false,
+        "packageVerified": true
+      }
+    },
+    "regularAppRelaunched": true,
+    "savedConversationCount": 1,
+    "savedMessageCount": 8
+  },
+  "speedAwareRecommendations": {
+    "tests": {
+      "passed": 79,
+      "failed": 0,
+      "skipped": 0,
+      "log": ".test-data/speed-aware/tests.log",
+      "logSHA256": "c01a90846ec9d2afc2712e597742f557d4866ffcb92c523810eb296ce14a39ec",
+      "probesEnabled": [
+        "HEARTH_SETUP_FIXTURE (real local setup and inference)",
+        "HEARTH_NAV_REPORT",
+        "HEARTH_RECOMMENDATION_REPORT",
+        "HEARTH_SNAPSHOT_DIR"
+      ],
+      "note": "Engine-backed tests need loopback networking and Metal; inside a restricted command sandbox the engine exits while loading."
+    },
+    "changes": [
+      "Generation speed estimated before download from Apple's rated memory bandwidth per chip and the bytes of active weights read per token (efficiency 0.55, calibrated against M4 measurements).",
+      "Goal speed and first-answer targets apply before download; thinking-evidence models need at least 512 thinking tokens within the wait, and leftover time buys more thinking (up to 4,096 for Best answers).",
+      "Q4_K_M and finer precisions rank equally; only compression beyond Q4 costs ranking points (IQ4 0.5, Q3 1.5, IQ3 2, Q2 7).",
+      "Best answers treats models within 2 points of the leader as tied and picks the fastest; the band is strict.",
+      "The shortlist lists each model once rather than several precisions of one model.",
+      "Home screen and recommendation details show expected first-answer time and writing speed, marked as estimated or measured.",
+      "The measured-speed tuner's lower bound rose from 256 to 512 thinking tokens to match the planner."
+    ],
+    "speedCalibrationOnM4": {
+      "bandwidthGBs": 120,
+      "estimatedVsMeasuredTokensPerSecond": {
+        "qwen35-4": [
+          24.1,
+          25.5
+        ],
+        "qwen3-4b": [
+          26.4,
+          24.5
+        ],
+        "smollm3-3b": [
+          34.4,
+          42.6
+        ],
+        "qwen3-06b": [
+          165.0,
+          157.4
+        ]
+      },
+      "tolerance": "within 25% (asserted in testSpeedEstimatesTrackSpeedsMeasuredOnAnM4)"
+    },
+    "simulatedLineup": {
+      "report": ".test-data/speed-aware/hardware-matrix.json",
+      "bestAnswers": {
+        "Apple M1 8 GB": "qwen35-4",
+        "Apple M4 16 GB": "qwen35-4",
+        "Apple M4 24 GB": "qwen35-4",
+        "Apple M4 Pro 24 GB": "qwen35-9",
+        "Apple M3 Pro 36 GB": "qwen35-35b-a3",
+        "Apple M4 Pro 48 GB": "qwen35-35b-a3",
+        "Apple M2 Max 64 GB": "qwen35-35b-a3",
+        "Apple M4 Max 128 GB": "qwen35-35b-a3",
+        "Apple M3 Ultra 256 GB": "qwen35-35b-a3"
+      }
+    },
+    "thisMac": {
+      "chip": "Apple M4",
+      "memoryGB": 16,
+      "bestAnswers": "qwen35-4",
+      "estimatedTokensPerSecond": 24,
+      "thinkingTokens": 768,
+      "estimatedFirstAnswerSeconds": 33,
+      "closestExcluded": "qwen35-9 (Q4) at about 47 s against the 45 s target"
+    },
+    "snapshots": [
+      ".test-data/speed-aware/snapshots/home.png",
+      ".test-data/speed-aware/snapshots/how-we-choose.png"
+    ],
+    "artifacts": {
+      "arm64": {
+        "app": "dist/Hearth.app",
+        "zip": "dist/Hearth-macOS.zip",
+        "zipBytes": 12218986,
+        "appBytes": 27892442,
+        "sha256": "05f0e0e39f95223af6f6e1da35fd15506348578eec472f097853b093a5a6de74",
+        "runtimeTested": true,
+        "packageVerified": true,
+        "log": ".test-data/speed-aware/verify-arm64.log"
+      },
+      "x86_64": {
+        "app": "dist/Intel/Hearth.app",
+        "zip": "dist/Intel/Hearth-macOS-Intel.zip",
+        "zipBytes": 12467566,
+        "appBytes": 27510367,
+        "sha256": "07132e7e54c917a9e69ec8e3aad50b0b9c65bc80601ddb19fd37f80abad0d693",
+        "runtimeTested": false,
+        "packageVerified": true,
+        "log": ".test-data/speed-aware/verify-intel.log"
+      }
+    },
+    "signing": "Ad-hoc. Developer ID signing and notarization require the owner's credentials (HEARTH_SIGN_IDENTITY, HEARTH_NOTARY_PROFILE).",
+    "limits": [
+      "Speed is estimated from rated bandwidth and a single efficiency factor measured on one M4 with 2-3 GB models; other chips and larger models are not runtime-tested.",
+      "Gemma 4 E-series models read less than their file size per token; their estimates are conservative.",
+      "The 512-token thinking minimum, 2-point tie band, and sub-Q4 allowances are disclosed product policy, not measurements.",
+      "48 of 75 configurations still lack comparable published evidence and are not auto-recommended."
+    ]
+  },
+  "imageAttachments": {
+    "tests": {
+      "passed": 97,
+      "failed": 0,
+      "skipped": 0,
+      "log": ".test-data/vision/tests.log",
+      "logSHA256": "e6634c044f20351c0235ca77a398e3fc0bb37cef6c2e39a6c69b281a91e295bf",
+      "realModelChecks": [
+        "VisionIntegrationTests (qwen35-4 with encoder; qwen3-4b text-only)",
+        "AttachmentFlowTests.testRealAppLooksAtAnAttachedImage (full app path, thinking on)"
+      ]
+    },
+    "visionModels": 22,
+    "imageTokenCap": 512,
+    "recognizedTextWithImageCharacters": 3000,
+    "measurements": {
+      "documentFirstAnswerSeconds": 0.99,
+      "followUpFirstAnswerSeconds": 0.76,
+      "imageAnswer": "Invoice #4271  \nTotal due: $318.40  \n\nShape: Circle  \nColor: Red",
+      "imageFirstAnswerSeconds": 8.89,
+      "loadWithImageSupportSeconds": 9.52,
+      "processMemoryGB": 3.84,
+      "reloadSeconds": 8.62,
+      "screenshotAnswer": "Based on the screenshot provided:\n\n- **Recommended Model:** **Qwen3.5 \u2022 4B**  \n  (Note: The text says \"Qwen3.5\", but you mentioned Qwen3.5 4B \u2014 this matches.)\n\n- **Download Size:** **2.6 GB**\n\nThe screen explicitly states:  \n> **DOWNLOAD 2.6 GB**\n\nSo, the recommended model is **Qwen3.5 \u2022 4B**, and it takes **2.6 GB** to download.",
+      "screenshotFirstAnswerSeconds": 9.74,
+      "textOnlyAnswer": "The invoice number is 4271, and the total due is $318.40.",
+      "textOnlyFirstAnswerSeconds": 1.78,
+      "thinkingFirstAnswerSeconds": 12.67
+    },
+    "imageCapComparisonOnM4": {
+      "note": "Same image and question, busy system (load average about 5.5); image tokens read at about 73 tokens/s versus 272 for text.",
+      "firstAnswerSeconds": {
+        "1024": [
+          10.71,
+          14.81
+        ],
+        "768": [
+          12.85,
+          10.98
+        ],
+        "512": [
+          6.79,
+          7.73
+        ]
+      }
+    },
+    "processing": {
+      "retinaScreenshotSeconds": {
+        "first": 0.92,
+        "warm": 0.41
+      },
+      "photo24MPSeconds": 1.68,
+      "longestMainThreadStallMs": 40
+    },
+    "snapshots": [
+      ".test-data/vision/snapshots/chat-attachments.png",
+      ".test-data/vision/snapshots/chat-text-only-model.png",
+      ".test-data/vision/snapshots/chat-adding-image-support.png",
+      ".test-data/vision/snapshots/drop-overlay.png"
+    ],
+    "packages": {
+      "arm64": {
+        "zip": "dist/MaxModel-macOS.zip",
+        "zipBytes": 14326727,
+        "sha256": "a6d9bdd191bd5224ec1e68842d89f689ce3873b262abf570a42a229f5bc96932",
+        "verified": true,
+        "launched": true
+      },
+      "x86_64": {
+        "zip": "dist/Intel/MaxModel-macOS-Intel.zip",
+        "zipBytes": 14653704,
+        "sha256": "8400b2211d4869f4501e544a1746420b1c760482f79333cba599f89b3998472b",
+        "verified": true,
+        "runtimeTested": false
+      }
+    },
+    "fixes": [
+      "Assistant instructions name the running model and treat shared content as current; before this, Qwen3.5 4B called a real screenshot of itself a mockup.",
+      "Assistant instructions said 'Hearth'; now 'MaxModel'."
+    ],
+    "limits": [
+      "Image understanding verified with Qwen3.5 4B; other encoders (Gemma, Ministral, Mistral Small) are pinned and hash-checked but not runtime-tested here.",
+      "Times are from one M4 with 16 GB under varying load.",
+      "PDF text recognition stops after 40 scanned pages; PDF text stops at 600,000 characters."
+    ]
+  }
+}

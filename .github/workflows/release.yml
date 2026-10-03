@@ -1,0 +1,158 @@
+name: Release and website
+
+# Merging to main publishes a release when Resources/Info.plist carries a version that has no
+# release yet, then redeploys the website with the latest release's download links and update feeds.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.check.outputs.version }}
+      release: ${{ steps.check.outputs.release }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          read -r VERSION BUILD < <(python3 -c 'import plistlib; i = plistlib.load(open("Resources/Info.plist", "rb")); print(i["CFBundleShortVersionString"], i["CFBundleVersion"])')
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          if gh release view "v$VERSION" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
+            echo "v$VERSION is already released; only the website is redeployed."
+            echo "release=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # Sparkle offers an update only when CFBundleVersion increases.
+          if gh release download --repo "$GITHUB_REPOSITORY" --pattern release.json --output previous.json 2>/dev/null; then
+            PREVIOUS="$(python3 -c 'import json; print(json.load(open("previous.json"))["build"])')"
+            if [ "$BUILD" -le "$PREVIOUS" ]; then
+              echo "::error file=Resources/Info.plist::CFBundleVersion $BUILD must be greater than the last release's $PREVIOUS, or installed copies will not update."
+              exit 1
+            fi
+          fi
+          echo "release=true" >> "$GITHUB_OUTPUT"
+
+  release:
+    needs: version
+    if: needs.version.outputs.release == 'true'
+    runs-on: macos-15
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    env:
+      VERSION: ${{ needs.version.outputs.version }}
+      HAS_DEVELOPER_ID: ${{ secrets.DEVELOPER_ID_P12 != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Require the update signing key
+        env:
+          SPARKLE_PRIVATE_KEY: ${{ secrets.SPARKLE_PRIVATE_KEY }}
+        run: |
+          if [ -z "$SPARKLE_PRIVATE_KEY" ]; then
+            echo "::error::Add the SPARKLE_PRIVATE_KEY repository secret (see README, Releases)."
+            exit 1
+          fi
+
+      - name: Fetch the pinned engine
+        run: python3 scripts/fetch-engine.py
+
+      - name: Tests
+        run: bash scripts/test.sh
+
+      - name: Prepare Developer ID signing and notarization
+        if: env.HAS_DEVELOPER_ID == 'true'
+        env:
+          DEVELOPER_ID_P12: ${{ secrets.DEVELOPER_ID_P12 }}
+          DEVELOPER_ID_P12_PASSWORD: ${{ secrets.DEVELOPER_ID_P12_PASSWORD }}
+          NOTARY_APPLE_ID: ${{ secrets.NOTARY_APPLE_ID }}
+          NOTARY_TEAM_ID: ${{ secrets.NOTARY_TEAM_ID }}
+          NOTARY_PASSWORD: ${{ secrets.NOTARY_PASSWORD }}
+        run: |
+          KEYCHAIN="$RUNNER_TEMP/signing.keychain-db"
+          PASSWORD="$(uuidgen)"
+          security create-keychain -p "$PASSWORD" "$KEYCHAIN"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN"
+          security unlock-keychain -p "$PASSWORD" "$KEYCHAIN"
+          echo "$DEVELOPER_ID_P12" | base64 --decode > "$RUNNER_TEMP/developer-id.p12"
+          security import "$RUNNER_TEMP/developer-id.p12" -k "$KEYCHAIN" -P "$DEVELOPER_ID_P12_PASSWORD" -T /usr/bin/codesign
+          rm "$RUNNER_TEMP/developer-id.p12"
+          security set-key-partition-list -S apple-tool:,apple: -s -k "$PASSWORD" "$KEYCHAIN" > /dev/null
+          security list-keychains -d user -s "$KEYCHAIN" $(security list-keychains -d user | tr -d '"')
+          IDENTITY="$(security find-identity -v -p codesigning "$KEYCHAIN" | grep -o '"Developer ID Application: [^"]*"' | head -1 | tr -d '"')"
+          xcrun notarytool store-credentials maxmodel-notary --apple-id "$NOTARY_APPLE_ID" --team-id "$NOTARY_TEAM_ID" --password "$NOTARY_PASSWORD" --keychain "$KEYCHAIN"
+          echo "HEARTH_SIGN_IDENTITY=$IDENTITY" >> "$GITHUB_ENV"
+          echo "HEARTH_NOTARY_PROFILE=maxmodel-notary" >> "$GITHUB_ENV"
+
+      - name: Build both apps
+        run: |
+          bash scripts/build-app.sh
+          bash scripts/build-app.sh x86_64
+          bash scripts/verify-package.sh
+          bash scripts/verify-package.sh dist/Intel/MaxModel-macOS-Intel.zip --static
+
+      - name: Sign updates and write release metadata
+        env:
+          SPARKLE_PRIVATE_KEY: ${{ secrets.SPARKLE_PRIVATE_KEY }}
+        run: |
+          KEY="$RUNNER_TEMP/sparkle.key"
+          (umask 077 && printf '%s' "$SPARKLE_PRIVATE_KEY" > "$KEY")
+          SIGN=.build/artifacts/sparkle/Sparkle/bin/sign_update
+          ARM="$("$SIGN" --ed-key-file "$KEY" dist/MaxModel-macOS.zip)"
+          INTEL="$("$SIGN" --ed-key-file "$KEY" dist/Intel/MaxModel-macOS-Intel.zip)"
+          NOTARIZED=""
+          if [ "$HAS_DEVELOPER_ID" = "true" ]; then NOTARIZED="--notarized"; fi
+          python3 scripts/release-metadata.py --repo "$GITHUB_REPOSITORY" --out release $NOTARIZED \
+            --arm dist/MaxModel-macOS.zip "$ARM" --intel dist/Intel/MaxModel-macOS-Intel.zip "$INTEL"
+          "$SIGN" --ed-key-file "$KEY" release/appcast.xml
+          "$SIGN" --ed-key-file "$KEY" release/appcast-intel.xml
+          "$SIGN" --verify --ed-key-file "$KEY" release/appcast.xml
+          "$SIGN" --verify --ed-key-file "$KEY" release/appcast-intel.xml
+          rm "$KEY"
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v$VERSION" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "MaxModel $VERSION" --generate-notes \
+            dist/MaxModel-macOS.zip dist/Intel/MaxModel-macOS-Intel.zip \
+            release/release.json release/appcast.xml release/appcast-intel.xml
+
+  website:
+    needs: [version, release]
+    if: ${{ !cancelled() && needs.version.result == 'success' && needs.release.result != 'failure' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble the site with the latest release's metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p _site
+          cp -R site/. _site/
+          gh release download --repo "$GITHUB_REPOSITORY" --dir _site \
+            --pattern release.json --pattern appcast.xml --pattern appcast-intel.xml \
+            || echo "No release yet; the site links to the releases page."
+          ls -la _site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

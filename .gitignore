@@ -1,0 +1,11 @@
+.build/
+.swiftpm/
+.test-data/
+dist/
+vendor/llama/*
+!vendor/llama/.gitkeep
+vendor/llama-x86_64/
+__pycache__/
+.DS_Store
+*.gguf
+*.part

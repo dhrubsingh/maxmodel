@@ -1,0 +1,122 @@
+{
+  "reviewedAt": "2026-10-02",
+  "runtime": "llama.cpp b11146 / 7fe450e19",
+  "runtimeSourceDigests": [
+    {
+      "file": "ggml_src_ggml-common.h",
+      "sha256": "0061131b615c5721fc88a78feeb22c1f8c450f1c2646a317d80796a653bf595c"
+    },
+    {
+      "file": "ggml_src_ggml-metal_ggml-metal-ops.cpp",
+      "sha256": "95f7770a76a7eebb2df455a9e67ea3a4e54c23ff1df23fe111e89b0481cf6c6e"
+    },
+    {
+      "file": "tools_server_README.md",
+      "sha256": "b45beb0842fcc98709b7df26d22da93db5f73f88386f0a6a9d6c18eac522b024"
+    },
+    {
+      "file": "docs_speculative.md",
+      "sha256": "f2d69e906e20c7c5f0059c8ba0e09638511fd730d6e104dc79d75716a6ff568c"
+    },
+    {
+      "file": "src_models_gemma4.cpp",
+      "sha256": "765ee856e30b3ddc126fa75c8252e5fbca6bae0e11abd9b71f4c21d911810ecb"
+    },
+    {
+      "file": "tools_server_server-context.cpp",
+      "sha256": "5f751fef3744521b86295c073ecc55f5da4810d28508f7911aa99a71647a93ee"
+    },
+    {
+      "file": "src_llama-memory-hybrid.cpp",
+      "sha256": "b2b193c4a412a91b1fe15a3c239d3b2664b5208ff49d6dba244ff8fec0880f92"
+    },
+    {
+      "file": "src_llama-kv-cache-iswa.cpp",
+      "sha256": "567fe836543e1dd9cdd5b7cb3a91afd049c17c7010f0bddf9fe149b02b5243cb"
+    },
+    {
+      "file": "src_llama-hparams.cpp",
+      "sha256": "ef6fbef7d12a23441b42cfac8e3a3a3045c7d3123402351ba98e69702e193301"
+    },
+    {
+      "file": "src_llama-memory-recurrent.cpp",
+      "sha256": "35903c832ba321aad3fca8b2adf2d481f6ba41196478c6c8f248ffe2bd7d9d51"
+    },
+    {
+      "file": "src_llama-model.cpp",
+      "sha256": "530dff0cd544382346cc18520cbdb7d7a6f6743c35f7af52aae0bec11d18992a"
+    },
+    {
+      "file": "src_models_qwen35.cpp",
+      "sha256": "ef973e9c789eb52ef27a77e0b1f36c6f41a378733a994d41b5924e3be012f671"
+    },
+    {
+      "file": "src_models_qwen35moe.cpp",
+      "sha256": "ada74c413bfda274f1ffe8c4c32dbd80e999c777a5888244cc118da832f635a7"
+    },
+    {
+      "file": "src_llama-kv-cache.cpp",
+      "sha256": "c74c66ab3b53635476089155505b7e73c35b31fd3127ab3da137cde2491d95d5"
+    }
+  ],
+  "decisions": [
+    {
+      "technique": "Compact KV cache",
+      "sources": [
+        "https://arxiv.org/abs/2402.02750",
+        "https://arxiv.org/abs/2504.19874",
+        "https://arxiv.org/abs/2606.20474"
+      ],
+      "decision": "Ship the pinned Metal runtime\u2019s existing Q8_0 attention cache with explicit precision control and FP16 fallback. This is not an implementation of KIVI, TurboQuant, or UltraQuant. Those papers motivate cache compression; their bits, kernels, devices, and results do not transfer to this app. Q8_0 stores 34 bytes for 32 values versus 64 FP16 bytes. Total memory savings depend on the architecture and workload. Automatic selection is conservative for recurrent/sliding-window architectures: ordinary fitting chats keep FP16; Q8 is considered for longer contexts or to make a requested window fit. Dense models use Q8 when estimated cache savings exceed 256 MiB. Reviewed Gemma 4 and Qwen3.5 cache geometry now determines meaningful savings: shared layers, bounded sliding windows and FP32 recurrent state are accounted for separately. Two partial-state checkpoints are reserved in estimates and explicitly enforced by the runtime flags."
+    },
+    {
+      "technique": "FlashAttention",
+      "sources": [
+        "https://arxiv.org/abs/2205.14135",
+        "https://github.com/ggml-org/llama.cpp/blob/7fe450e19/ggml/src/ggml-metal/ggml-metal-ops.cpp"
+      ],
+      "decision": "Already available through the existing runtime. Explicitly require its supported path for quantized V cache and retain auto mode for full precision. Do not claim this is a newly invented kernel or FlashAttention-3 CUDA performance on Metal."
+    },
+    {
+      "technique": "Longer context / RoPE scaling",
+      "sources": [
+        "https://arxiv.org/abs/2309.00071"
+      ],
+      "decision": "Offer budgeted contexts up to 65536 tokens, never beyond pinned model metadata. Preserve publisher-provided runtime parameters; do not force arbitrary RoPE scaling. Add synthetic long-input retrieval with exact tokenizer accounting, separate from capacity claims."
+    },
+    {
+      "technique": "Speculative decoding, EAGLE-3, DFlash, DSpark, MTP",
+      "sources": [
+        "https://arxiv.org/abs/2211.17192",
+        "https://github.com/ggml-org/llama.cpp/blob/7fe450e19/docs/speculative.md",
+        "https://arxiv.org/abs/2602.06036",
+        "https://arxiv.org/abs/2607.05147"
+      ],
+      "decision": "Investigated but not enabled globally. Model-specific drafting heads/checkpoints, additional memory, acceptance rates and workload matter. N-gram speculation needs measured benefit across ordinary chat, not only repetitive code; none is claimed here."
+    },
+    {
+      "technique": "Prefix reuse and bounded history preparation",
+      "sources": [
+        "https://github.com/ggml-org/llama.cpp/blob/7fe450e19/tools/server/README.md"
+      ],
+      "decision": "Retain in-memory matching prefix reuse with auxiliary RAM archive disabled. Replace linear turn-by-turn context trimming with exact-tokenizer bisection over complete-turn boundaries. Never silently summarize, overwrite, or train on user chat."
+    },
+    {
+      "technique": "PagedAttention / multi-request serving",
+      "sources": [
+        "https://arxiv.org/abs/2309.06180"
+      ],
+      "decision": "Not a direct win for Hearth\u2019s single-user single-slot runtime. Do not import server batching complexity or claim a new model intelligence gain."
+    },
+    {
+      "technique": "Architecture-aware cache planning and bounded checkpoints",
+      "sources": [
+        "https://github.com/ggml-org/llama.cpp/blob/7fe450e19/src/models/gemma4.cpp",
+        "https://github.com/ggml-org/llama.cpp/blob/7fe450e19/src/models/qwen35.cpp",
+        "https://github.com/ggml-org/llama.cpp/blob/7fe450e19/src/llama-kv-cache-iswa.cpp",
+        "https://github.com/ggml-org/llama.cpp/blob/7fe450e19/tools/server/server-context.cpp"
+      ],
+      "decision": "Compute shared/sliding/recurrent storage from pinned metadata for reviewed architectures. Bound partial-state checkpoints to two instead of 32. Keep unknown layouts conservative and preserve FP32 recurrent state. The cache layout itself is provided by the existing runtime; Hearth now budgets it correctly."
+    }
+  ]
+}

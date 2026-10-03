@@ -1,0 +1,6 @@
+[
+  {
+    "source": "zai-org/GLM-4.7-Flash",
+    "reason": "Publisher metadata says MIT, but a complete original model license notice could not be located. The related code repository uses Apache-2.0; that must not be substituted. Hold until the original notice is verified."
+  }
+]

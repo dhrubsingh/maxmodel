@@ -1,0 +1,1099 @@
+{
+  "checkedAt": "2026-10-03",
+  "metricsByModel": {
+    "qwen3-4b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 58,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+        "sourceSHA256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 81.2,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+        "sourceSHA256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      }
+    ],
+    "qwen3-instruct-4": [
+      {
+        "name": "MMLU-Pro",
+        "value": 69.6,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+        "sourceSHA256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 83.4,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+        "sourceSHA256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      }
+    ],
+    "qwen3-instruct-30b-a3": [
+      {
+        "name": "MMLU-Pro",
+        "value": 78.4,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "sourceSHA256": "5d25d4b43cdfaf83e3d71df8f3436703ab26d92c07305053be667f577a49bb9e",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 84.7,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
+        "sourceSHA256": "5d25d4b43cdfaf83e3d71df8f3436703ab26d92c07305053be667f577a49bb9e",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      }
+    ],
+    "qwen3-17b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 40.2,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+        "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 68.2,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+        "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      }
+    ],
+    "qwen35-08": [
+      {
+        "name": "MMLU-Pro",
+        "value": 29.7,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+        "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 52.1,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+        "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      }
+    ],
+    "qwen35-2": [
+      {
+        "name": "MMLU-Pro",
+        "value": 55.3,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+        "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 61.2,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+        "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      }
+    ],
+    "qwen35-4": [
+      {
+        "name": "MMLU-Pro",
+        "value": 79.1,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 76.2,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 89.8,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      }
+    ],
+    "qwen35-9": [
+      {
+        "name": "MMLU-Pro",
+        "value": 82.5,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 81.7,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 91.5,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      }
+    ],
+    "gpt-oss-20b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 74.8,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 71.5,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 88.2,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      }
+    ],
+    "gpt-oss-120b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 80.8,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 80.1,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 88.9,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      }
+    ],
+    "qwen35-27": [
+      {
+        "name": "MMLU-Pro",
+        "value": 86.1,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 85.5,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 95,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "qwen35-35b-a3": [
+      {
+        "name": "MMLU-Pro",
+        "value": 85.3,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 84.2,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 91.9,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "gemma4-31b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 85.2,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 84.3,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "gemma4-26b-a4b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 82.6,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 82.3,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "gemma4-12b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 77.2,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 78.8,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "gemma4-e4b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 69.4,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 58.6,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "gemma4-e2b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 60,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 43.4,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "gemma3-27b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 67.6,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 42.4,
+        "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+        "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      }
+    ],
+    "smollm3-3b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 35.7,
+        "sourceURL": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+        "sourceSHA256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 76.7,
+        "sourceURL": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+        "sourceSHA256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      }
+    ],
+    "phi4-mini": [
+      {
+        "name": "MMLU-Pro",
+        "value": 52.8,
+        "sourceURL": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+        "sourceSHA256": "c4f34916182a3ee87d95d00c92847cfa687ab21dc338a577275f0c34cf0e1dfd",
+        "setting": "Microsoft evaluation, 0-shot chain of thought; upstream model. GPQA (unspecified subset) is not treated as GPQA Diamond.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 25.2,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation of Phi-4-mini; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 68.6,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation of Phi-4-mini; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "phi35-mini": [
+      {
+        "name": "MMLU-Pro",
+        "value": 47.4,
+        "sourceURL": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+        "sourceSHA256": "c4f34916182a3ee87d95d00c92847cfa687ab21dc338a577275f0c34cf0e1dfd",
+        "setting": "Microsoft evaluation, 0-shot chain of thought; upstream model. GPQA (unspecified subset) is not treated as GPQA Diamond.",
+        "thinking": false
+      }
+    ],
+    "llama32-3b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 39.2,
+        "sourceURL": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+        "sourceSHA256": "c4f34916182a3ee87d95d00c92847cfa687ab21dc338a577275f0c34cf0e1dfd",
+        "setting": "Microsoft evaluation, 0-shot chain of thought; upstream model. GPQA (unspecified subset) is not treated as GPQA Diamond.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 77.4,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/0cb88a4f764b7a12671c53f0838cd831a0843b95/README.md",
+        "sourceSHA256": "8cea167f3aa4dbeea16d32caf6e446184e7e9aa9ebae7de6e3259ea049874570",
+        "setting": "Meta model card (IFEval 0-shot, average of prompt/instruction loose/strict, bf16); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "qwen25-7b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 56.3,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 36.4,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 71.2,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "llama31-8b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 48.3,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+        "thinking": false,
+        "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+      },
+      {
+        "name": "IFEval",
+        "value": 80.4,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+        "thinking": false,
+        "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 31.8,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+        "thinking": false,
+        "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+      }
+    ],
+    "qwen25-14b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 63.7,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 45.5,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 81.0,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "mistral-nemo": [
+      {
+        "name": "IFEval",
+        "value": 64.5,
+        "sourceURL": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
+        "sourceSHA256": "ca667a7d680a0165460ba0549b1aa26732c52b841650040a2db773e28bddcd8c",
+        "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+        "thinking": false
+      }
+    ],
+    "llama31-70b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 66.4,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+        "thinking": false,
+        "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+      },
+      {
+        "name": "IFEval",
+        "value": 87.5,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+        "thinking": false,
+        "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 48,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+        "thinking": false,
+        "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+      }
+    ],
+    "llama33-70b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 68.9,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+        "thinking": false,
+        "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+      },
+      {
+        "name": "IFEval",
+        "value": 92.1,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+        "thinking": false,
+        "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 50.5,
+        "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+        "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+        "thinking": false,
+        "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+      }
+    ],
+    "qwen35-9-q6": [
+      {
+        "name": "MMLU-Pro",
+        "value": 82.5,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 81.7,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 91.5,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+        "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+        "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+        "thinking": true
+      }
+    ],
+    "qwen35-27-iq3": [
+      {
+        "name": "MMLU-Pro",
+        "value": 86.1,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 85.5,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 95,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "qwen35-27-q6": [
+      {
+        "name": "MMLU-Pro",
+        "value": 86.1,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 85.5,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 95,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "qwen35-27-q8": [
+      {
+        "name": "MMLU-Pro",
+        "value": 86.1,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 85.5,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 95,
+        "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+        "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+        "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "qwen3-06b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 22.9,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 54.5,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "qwen3-8b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 39.3,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 83.0,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "qwen3-14b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 54.8,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 84.8,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "phi4-14b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 56.1,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation of Phi-4; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 62.1,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation of Phi-4; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "deepseek-r1-15b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 33.8,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 39.9,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "deepseek-r1-14b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 59.1,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 72.6,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "deepseek-r1-32b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 62.1,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      },
+      {
+        "name": "IFEval",
+        "value": 72.5,
+        "sourceURL": "https://arxiv.org/html/2505.09388v1",
+        "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+        "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+        "thinking": true
+      }
+    ],
+    "qwen25-15b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 32.4,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 29.8,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 42.5,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "qwen25-32b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 69.0,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 49.5,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 79.5,
+        "sourceURL": "https://arxiv.org/html/2412.15115v2",
+        "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+        "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "gemma3-1b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 14.7,
+        "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+        "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+        "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 19.2,
+        "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+        "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+        "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 80.2,
+        "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+        "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+        "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "gemma3-4b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 43.6,
+        "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+        "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+        "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 30.8,
+        "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+        "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+        "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 90.2,
+        "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+        "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+        "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "gemma3-12b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 60.6,
+        "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+        "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+        "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 40.9,
+        "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+        "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+        "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 88.9,
+        "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+        "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+        "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "mistral-small32": [
+      {
+        "name": "MMLU-Pro",
+        "value": 69.06,
+        "sourceURL": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/resolve/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md",
+        "sourceSHA256": "48d492d5ded3dfb80ab53033391c7ada71f42037e442758d9eb29fdb08929edb",
+        "setting": "Mistral model card (MMLU-Pro 5-shot CoT, GPQA Diamond 5-shot CoT); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "GPQA Diamond",
+        "value": 46.13,
+        "sourceURL": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/resolve/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md",
+        "sourceSHA256": "48d492d5ded3dfb80ab53033391c7ada71f42037e442758d9eb29fdb08929edb",
+        "setting": "Mistral model card (MMLU-Pro 5-shot CoT, GPQA Diamond 5-shot CoT); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "falcon3-1b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 18.6,
+        "sourceURL": "https://huggingface.co/tiiuae/Falcon3-1B-Instruct/resolve/28ba2251970a01dd1edc7ba7dad2eb71216ccfdf/README.md",
+        "sourceSHA256": "f8e4380e06067d1d0c6c8f1b048728398f280b9cf9a37c129fec47e38c09232d",
+        "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 54.4,
+        "sourceURL": "https://huggingface.co/tiiuae/Falcon3-1B-Instruct/resolve/28ba2251970a01dd1edc7ba7dad2eb71216ccfdf/README.md",
+        "sourceSHA256": "f8e4380e06067d1d0c6c8f1b048728398f280b9cf9a37c129fec47e38c09232d",
+        "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "falcon3-3b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 29.7,
+        "sourceURL": "https://huggingface.co/tiiuae/Falcon3-3B-Instruct/resolve/411bb94318f94f7a5735b77109f456b1e74b42a1/README.md",
+        "sourceSHA256": "29ed7aced495548fa69bd37af3886131d080817b1ece361c77a34e399565bc39",
+        "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 68.3,
+        "sourceURL": "https://huggingface.co/tiiuae/Falcon3-3B-Instruct/resolve/411bb94318f94f7a5735b77109f456b1e74b42a1/README.md",
+        "sourceSHA256": "29ed7aced495548fa69bd37af3886131d080817b1ece361c77a34e399565bc39",
+        "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "falcon3-7b": [
+      {
+        "name": "MMLU-Pro",
+        "value": 40.7,
+        "sourceURL": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct/resolve/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/README.md",
+        "sourceSHA256": "1540a8abfb081eec20d132c3fa482085ab595dab5e8b1cdc679d2a1926578426",
+        "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 76.5,
+        "sourceURL": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct/resolve/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/README.md",
+        "sourceSHA256": "1540a8abfb081eec20d132c3fa482085ab595dab5e8b1cdc679d2a1926578426",
+        "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "lfm25-230m": [
+      {
+        "name": "GPQA Diamond",
+        "value": 25.41,
+        "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-230M/resolve/40cb2ad3b3044d5a41eee083a6103c8b523afa45/README.md",
+        "sourceSHA256": "f614b46c1e8328d38af7ae88d020dc0b7871b27e6addfa528821bee823d47270",
+        "setting": "Liquid AI model card; upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "MMLU-Pro",
+        "value": 20.25,
+        "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-230M/resolve/40cb2ad3b3044d5a41eee083a6103c8b523afa45/README.md",
+        "sourceSHA256": "f614b46c1e8328d38af7ae88d020dc0b7871b27e6addfa528821bee823d47270",
+        "setting": "Liquid AI model card; upstream weights, not this GGUF.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 71.71,
+        "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-230M/resolve/40cb2ad3b3044d5a41eee083a6103c8b523afa45/README.md",
+        "sourceSHA256": "f614b46c1e8328d38af7ae88d020dc0b7871b27e6addfa528821bee823d47270",
+        "setting": "Liquid AI model card; upstream weights, not this GGUF.",
+        "thinking": false
+      }
+    ],
+    "lfm25-1.2b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 38.89,
+        "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+        "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+        "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+        "thinking": false
+      },
+      {
+        "name": "MMLU-Pro",
+        "value": 44.35,
+        "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+        "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+        "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 86.23,
+        "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+        "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+        "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+        "thinking": false
+      }
+    ],
+    "llama32-1b": [
+      {
+        "name": "GPQA Diamond",
+        "value": 16.57,
+        "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+        "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+        "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+        "thinking": false
+      },
+      {
+        "name": "MMLU-Pro",
+        "value": 20.8,
+        "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+        "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+        "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+        "thinking": false
+      },
+      {
+        "name": "IFEval",
+        "value": 52.37,
+        "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+        "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+        "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+        "thinking": false
+      }
+    ]
+  }
+}

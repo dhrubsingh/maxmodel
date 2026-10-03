@@ -1,0 +1,1945 @@
+{
+  "checkedAt": "2026-10-03",
+  "models": [
+    {
+      "modelID": "qwen3-06b",
+      "modelSHA256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+      "maximumContext": 40960,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 22.9,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 54.5,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen3-17b",
+      "modelSHA256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+      "maximumContext": 40960,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 40.2,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+          "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 68.2,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+          "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen3-4b",
+      "modelSHA256": "f6f851777709861056efcdad3af01da38b31223a3ba26e61a4f8bf3a2195813a",
+      "maximumContext": 40960,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 58,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+          "sourceSHA256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 81.2,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+          "sourceSHA256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen3-8b",
+      "modelSHA256": "120307ba529eb2439d6c430d94104dabd578497bc7bfe7e322b5d9933b449bd4",
+      "maximumContext": 40960,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 39.3,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 83.0,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen3-14b",
+      "modelSHA256": "5eaa0870bd81ed3b58a630a271234cfa604e43ffb3a19cd68e54a80dd9d52a66",
+      "maximumContext": 40960,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 54.8,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 84.8,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen25-15b",
+      "modelSHA256": "1adf0b11065d8ad2e8123ea110d1ec956dab4ab038eab665614adba04b6c3370",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 32.4,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 29.8,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 42.5,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "smollm3-3b",
+      "modelSHA256": "4de907d2d388a5508fb7cb443a06effe14cce3518b0a78d3bdd9e74d9edce989",
+      "maximumContext": 65536,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 35.7,
+          "sourceURL": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+          "sourceSHA256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 76.7,
+          "sourceURL": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+          "sourceSHA256": "24f16f90b883af3618425a589783a944356a7fc2e3cfa69b579c9ff06963e178",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "phi4-mini",
+      "modelSHA256": "88c00229914083cd112853aab84ed51b87bdf6b9ce42f532d8c85c7c63b1730a",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 52.8,
+          "sourceURL": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+          "sourceSHA256": "c4f34916182a3ee87d95d00c92847cfa687ab21dc338a577275f0c34cf0e1dfd",
+          "setting": "Microsoft evaluation, 0-shot chain of thought; upstream model. GPQA (unspecified subset) is not treated as GPQA Diamond.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 25.2,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation of Phi-4-mini; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 68.6,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation of Phi-4-mini; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "ministral3-3b",
+      "modelSHA256": "fd46fc371ff0509bfa8657ac956b7de8534d7d9baaa4947975c0648c3aa397f4",
+      "maximumContext": 262144,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "qwen35-08",
+      "modelSHA256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+      "maximumContext": 262144,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 29.7,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+          "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 52.1,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+          "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 12288,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 20201472,
+        "description": "6 full-attention layers plus 18 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen35-2",
+      "modelSHA256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223",
+      "maximumContext": 262144,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 55.3,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+          "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 61.2,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+          "sourceSHA256": "c0e83a849c776e6fa843d011f023132d942a0f0140d903205bf1c363adad2275",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 12288,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 20201472,
+        "description": "6 full-attention layers plus 18 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen35-4",
+      "modelSHA256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 79.1,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 76.2,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 89.8,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 32768,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 52690944,
+        "description": "8 full-attention layers plus 24 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen35-9",
+      "modelSHA256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 82.5,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 81.7,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 91.5,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 32768,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 52690944,
+        "description": "8 full-attention layers plus 24 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen35-9-q6",
+      "modelSHA256": "91898433cf5ce0a8f45516a4cc3e9343b6e01d052d01f684309098c66a326c59",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 82.5,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 81.7,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 91.5,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 32768,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 52690944,
+        "description": "8 full-attention layers plus 24 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen35-27",
+      "modelSHA256": "84b5f7f112156d63836a01a69dc3f11a6ba63b10a23b8ca7a7efaf52d5a2d806",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 86.1,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 85.5,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 95,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 65536,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 156893184,
+        "description": "16 full-attention layers plus 48 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen35-27-iq3",
+      "modelSHA256": "b694e54fe124e299e1342a9f0b81f1a51e3c8bbccf11c0bd94394b28cc8ae2f9",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 86.1,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 85.5,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 95,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 65536,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 156893184,
+        "description": "16 full-attention layers plus 48 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen35-27-q6",
+      "modelSHA256": "69e0f8527e0d937097cbcd486b51e2effaed963f49ef7962c9ef3eab45164ff8",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 86.1,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 85.5,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 95,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 65536,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 156893184,
+        "description": "16 full-attention layers plus 48 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen35-27-q8",
+      "modelSHA256": "6b0a101b0a86697fe11eabcc1a7db72699a9f3d4b18b6a1ac75ea3fb2c26c450",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 86.1,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 85.5,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 95,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 65536,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 156893184,
+        "description": "16 full-attention layers plus 48 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen35-35b-a3",
+      "modelSHA256": "3b46d1066bc91cc2d613e3bc22ce691dd77e6f0d33c9060690d24ce6de494375",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": 3.0,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 85.3,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 84.2,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 91.9,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-27B",
+          "sourceSHA256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 20480,
+        "slidingAttentionBytesPerToken": 0,
+        "slidingWindowTokens": 0,
+        "recurrentStateBytes": 65863680,
+        "description": "10 full-attention layers plus 30 recurrent layers; recurrent state stays FP32. Includes room for two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen3-instruct-4",
+      "modelSHA256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+      "maximumContext": 262144,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 69.6,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+          "sourceSHA256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 83.4,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+          "sourceSHA256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen3-instruct-30b-a3",
+      "modelSHA256": "6c997b8af17debdfb01d890214400ccbab00db6acc0ba8da5de1cc906c4774d0",
+      "maximumContext": 262144,
+      "supportsThinking": false,
+      "activeParameters": 3.3,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 78.4,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "sourceSHA256": "5d25d4b43cdfaf83e3d71df8f3436703ab26d92c07305053be667f577a49bb9e",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 84.7,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "sourceSHA256": "5d25d4b43cdfaf83e3d71df8f3436703ab26d92c07305053be667f577a49bb9e",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen3-coder-30b",
+      "modelSHA256": "fadc3e5f8d42bf7e894a785b05082e47daee4df26680389817e2093056f088ad",
+      "maximumContext": 262144,
+      "supportsThinking": false,
+      "activeParameters": 3.3,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "qwen25-coder-05b",
+      "modelSHA256": "0128e77564e43d40682f82d7ebe8a9abdf0c24c8f55fa85629f8cc156b1b6560",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "qwen25-coder-15b",
+      "modelSHA256": "f530705d447660a4336c329981af164b471b60b974b1d808d57e8ec9fe23b239",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "qwen25-coder-3b",
+      "modelSHA256": "3da3afe6cf5c674ac195803ea0dd6fee7e1c228c2105c1ce8c66890d1d4ab460",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "qwen25-coder-7b",
+      "modelSHA256": "1664fccab734674a50763490a8c6931b70e3f2f8ec10031b54806d30e5f956b6",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "qwen25-coder-14b",
+      "modelSHA256": "2946d28c9e1bb2bcae6d42e8678863a31775df6f740315c7d7e6d6b6411f5937",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "qwen25-coder-32b",
+      "modelSHA256": "8e2fd78ff55e7cdf577fda257bac2776feb7d73d922613caf35468073807e815",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "qwen25-7b",
+      "modelSHA256": "65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 56.3,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 36.4,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 71.2,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen25-14b",
+      "modelSHA256": "e47ad95dad6ff848b431053b375adb5d39321290ea2c638682577dafca87c008",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 63.7,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 45.5,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 81.0,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "qwen25-32b",
+      "modelSHA256": "2e5f6daea180dbc59f65a40641e94d3973b5dbaa32b3c0acf54647fa874e519e",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 69.0,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 49.5,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 79.5,
+          "sourceURL": "https://arxiv.org/html/2412.15115v2",
+          "sourceSHA256": "4151dd29775953b1b46c51c4ccc64406cf8c09b17cf6f55f7c17acaced0827ec",
+          "setting": "Qwen2.5 Technical Report, instruction-tuned table (publisher evaluation; the Qwen3 report lists these GPQA values as GPQA-Diamond); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "llama32-1b",
+      "modelSHA256": "6f85a640a97cf2bf5b8e764087b1e83da0fdb51d7c9fab7d0fece9385611df83",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 16.57,
+          "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+          "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+          "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+          "thinking": false
+        },
+        {
+          "name": "MMLU-Pro",
+          "value": 20.8,
+          "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+          "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+          "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 52.37,
+          "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+          "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+          "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "llama32-3b",
+      "modelSHA256": "6c1a2b41161032677be168d354123594c0e6e67d2b9227c84f296ad037c728ff",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 39.2,
+          "sourceURL": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+          "sourceSHA256": "c4f34916182a3ee87d95d00c92847cfa687ab21dc338a577275f0c34cf0e1dfd",
+          "setting": "Microsoft evaluation, 0-shot chain of thought; upstream model. GPQA (unspecified subset) is not treated as GPQA Diamond.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 77.4,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/resolve/0cb88a4f764b7a12671c53f0838cd831a0843b95/README.md",
+          "sourceSHA256": "8cea167f3aa4dbeea16d32caf6e446184e7e9aa9ebae7de6e3259ea049874570",
+          "setting": "Meta model card (IFEval 0-shot, average of prompt/instruction loose/strict, bf16); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "llama31-8b",
+      "modelSHA256": "7b064f5842bf9532c91456deda288a1b672397a54fa729aa665952863033557c",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 48.3,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+          "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+          "thinking": false,
+          "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+        },
+        {
+          "name": "IFEval",
+          "value": 80.4,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+          "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+          "thinking": false,
+          "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 31.8,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+          "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+          "thinking": false,
+          "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "llama31-70b",
+      "modelSHA256": "f775c87029be95fb41df9e2882e6e938b73121c30ffc235ac6b6b880add49aa5",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 66.4,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+          "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+          "thinking": false,
+          "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+        },
+        {
+          "name": "IFEval",
+          "value": 87.5,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+          "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+          "thinking": false,
+          "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 48,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+          "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+          "thinking": false,
+          "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "llama33-70b",
+      "modelSHA256": "32df3baccb556f9840059b2528b2dee4d3d516b24afdfb9d0c56ff5f63e3a664",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 68.9,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+          "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+          "thinking": false,
+          "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+        },
+        {
+          "name": "IFEval",
+          "value": 92.1,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+          "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+          "thinking": false,
+          "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 50.5,
+          "sourceURL": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+          "sourceSHA256": "74be2335bbfb8f26a7f67ceb895cd25d6b07e4adb2db06a0019529a9000ed95a",
+          "thinking": false,
+          "setting": "Meta model-card evaluation of the instruction-tuned weights: MMLU-Pro 5-shot CoT; GPQA Diamond 0-shot CoT. Upstream precision, not this GGUF."
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gemma3-270m",
+      "modelSHA256": "b1baabd6b729e4041822220d3e648e00d99cac5df86b10dffb77bcccf0688e39",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "gemma3-1b",
+      "modelSHA256": "8270790f3ab69fdfe860b7b64008d9a19986d8df7e407bb018184caa08798ebd",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 14.7,
+          "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+          "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+          "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 19.2,
+          "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+          "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+          "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 80.2,
+          "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+          "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+          "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gemma3-4b",
+      "modelSHA256": "04a43a22e8d2003deda5acc262f68ec1005fa76c735a9962a8c77042a74a7d19",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 43.6,
+          "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+          "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+          "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 30.8,
+          "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+          "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+          "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 90.2,
+          "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+          "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+          "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gemma3-12b",
+      "modelSHA256": "15b8fd9d8672cd4240c178c217ca781409291f34e353d2e913b29c7602ceb3ff",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 60.6,
+          "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+          "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+          "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 40.9,
+          "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+          "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+          "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 88.9,
+          "sourceURL": "https://huggingface.co/google/gemma-3-270m-it/resolve/ac82b4e820549b854eebf28ce6dedaf9fdfa17b3/README.md",
+          "sourceSHA256": "9568b09f2a80d09746687bc077aefe9a070948c68d5f1af07007b2da9a70a065",
+          "setting": "Google Gemma 3 model card, instruction-tuned table (0-shot); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gemma3-27b",
+      "modelSHA256": "f1b699659942c777bd3ec0bcb527d6ebf34ae14ca76e3af103d58d0c9cbdadee",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 67.6,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 42.4,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gemma4-e2b",
+      "modelSHA256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8",
+      "maximumContext": 131072,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 60,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 43.4,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 6144,
+        "slidingAttentionBytesPerToken": 12288,
+        "slidingWindowTokens": 512,
+        "recurrentStateBytes": 0,
+        "description": "3 full-attention and 12 sliding-window cache layers; 20 later layers share existing cache. Includes a 512-token microbatch and two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gemma4-e4b",
+      "modelSHA256": "85a896a047553e842f25297ee5b031d64ff30147d9c4af17b1e4b394cd1fab87",
+      "maximumContext": 131072,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 69.4,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 58.6,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": {
+        "fullAttentionBytesPerToken": 16384,
+        "slidingAttentionBytesPerToken": 40960,
+        "slidingWindowTokens": 512,
+        "recurrentStateBytes": 0,
+        "description": "4 full-attention and 20 sliding-window cache layers; 18 later layers share existing cache. Includes a 512-token microbatch and two partial-state checkpoints."
+      },
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gemma4-12b",
+      "modelSHA256": "0a270ec9fe6b34f4a0d33992b6135117b484ebc4766ab76b51d4ae8c457e4c42",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 77.2,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 78.8,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gemma4-26b-a4b",
+      "modelSHA256": "f2c28b3dc4776931ac6f879e11f203dec637ea0f14267a86ec8f6165f63f293f",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": 3.8,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 82.6,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 82.3,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gemma4-31b",
+      "modelSHA256": "38bd64c852c4b460434cc7162fa9bdcf242faf86502581a754cb72956bb17f84",
+      "maximumContext": 262144,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 85.2,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 84.3,
+          "sourceURL": "https://huggingface.co/google/gemma-4-12b-it",
+          "sourceSHA256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0",
+          "setting": "Publisher table; extended thinking; upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "ministral3-8b",
+      "modelSHA256": "5dbc3647eb563b9f8d3c70ec3d906cce84b86bb35c5e0b8a36e7df3937ab7174",
+      "maximumContext": 262144,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "ministral3-14b",
+      "modelSHA256": "76ce697c065f2e40f1e8e958118b02cab38e2c10a6015f7d7908036a292dc8c8",
+      "maximumContext": 262144,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "mistral7-v03",
+      "modelSHA256": "1270d22c0fbb3d092fb725d4d96c457b7b687a5f5a715abe1e818da303e562b6",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "mistral-nemo",
+      "modelSHA256": "7c1a10d202d8788dbe5628dc962254d10654c853cae6aaeca0618f05490d4a46",
+      "maximumContext": 1024000,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "IFEval",
+          "value": 64.5,
+          "sourceURL": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
+          "sourceSHA256": "ca667a7d680a0165460ba0549b1aa26732c52b841650040a2db773e28bddcd8c",
+          "setting": "Published direct-answer evaluation; upstream weights, not this GGUF. Prompt and evaluation settings vary across sources.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "mistral-small32",
+      "modelSHA256": "a3cc56310807ed0d145eaf9f018ccda9ae7ad8edb41ec870aa2454b0d4700b3c",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 69.06,
+          "sourceURL": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/resolve/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md",
+          "sourceSHA256": "48d492d5ded3dfb80ab53033391c7ada71f42037e442758d9eb29fdb08929edb",
+          "setting": "Mistral model card (MMLU-Pro 5-shot CoT, GPQA Diamond 5-shot CoT); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 46.13,
+          "sourceURL": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/resolve/95a6d26c4bfb886c58daf9d3f7332c857cb27b43/README.md",
+          "sourceSHA256": "48d492d5ded3dfb80ab53033391c7ada71f42037e442758d9eb29fdb08929edb",
+          "setting": "Mistral model card (MMLU-Pro 5-shot CoT, GPQA Diamond 5-shot CoT); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "phi4-14b",
+      "modelSHA256": "009aba717c09d4a35890c7d35eb59d54e1dba884c7c526e7197d9c13ab5911d9",
+      "maximumContext": 16384,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 56.1,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation of Phi-4; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 62.1,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, non-thinking comparison table (Qwen evaluation of Phi-4; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "phi35-mini",
+      "modelSHA256": "e4165e3a71af97f1b4820da61079826d8752a2088e313af0c7d346796c38eff5",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 47.4,
+          "sourceURL": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+          "sourceSHA256": "c4f34916182a3ee87d95d00c92847cfa687ab21dc338a577275f0c34cf0e1dfd",
+          "setting": "Microsoft evaluation, 0-shot chain of thought; upstream model. GPQA (unspecified subset) is not treated as GPQA Diamond.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "smollm2-135m",
+      "modelSHA256": "2e8040ceae7815abe0dcb3540b9995eaa1fa0d2ca9e797d0a635ae4433c68c2d",
+      "maximumContext": 8192,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "smollm2-360m",
+      "modelSHA256": "2fa3f013dcdd7b99f9b237717fa0b12d75bbb89984cc1274be1471a465bac9c2",
+      "maximumContext": 8192,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "smollm2-1.7b",
+      "modelSHA256": "77665ea4815999596525c636fbeb56ba8b080b46ae85efef4f0d986a139834d7",
+      "maximumContext": 8192,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "granite33-2b",
+      "modelSHA256": "ac71e9e32c0bea919b409c5918f69ca74339854b0319c5065e4e9fb6d95c4852",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "granite33-8b",
+      "modelSHA256": "77bcee066a76dcdd10d0d123c87e32c8ec2c74e31b6ffd87ebee49c9ac215dca",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "olmo2-7b",
+      "modelSHA256": "88790198b8ab4f251b5b462756adc0265b3f6b9d9d87708d847645d9568bf168",
+      "maximumContext": 4096,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "olmo2-13b",
+      "modelSHA256": "aadb9c6933fdf2d8c67627d9e9b84c74d852a456725e8cc8fd4556cc4528db1f",
+      "maximumContext": 4096,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "deepseek-r1-15b",
+      "modelSHA256": "1741e5b2d062b07acf048bf0d2c514dadf2a48f94e2b4aa0cfe069af3838ee2f",
+      "maximumContext": 131072,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 33.8,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 39.9,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "deepseek-r1-7b",
+      "modelSHA256": "731ece8d06dc7eda6f6572997feb9ee1258db0784827e642909d9b565641937b",
+      "maximumContext": 131072,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "deepseek-r1-14b",
+      "modelSHA256": "0b319bd0572f2730bfe11cc751defe82045fad5085b4e60591ac2cd2d9633181",
+      "maximumContext": 131072,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 59.1,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 72.6,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "deepseek-r1-32b",
+      "modelSHA256": "bed9b0f551f5b95bf9da5888a48f0f87c37ad6b72519c4cbd775f54ac0b9fc62",
+      "maximumContext": 131072,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 62.1,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 72.5,
+          "sourceURL": "https://arxiv.org/html/2505.09388v1",
+          "sourceSHA256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7",
+          "setting": "Qwen3 Technical Report, thinking comparison table (Qwen evaluation; GPQA-Diamond averaged over 10 samples, IFEval strict prompt); upstream weights, not this GGUF. Hearth uses a shorter thinking budget.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "deepseek-r1-0528",
+      "modelSHA256": "a86349a4180c4e6bb43f874c29c404fa2be3f90b15509bd6d86f697dba724ec1",
+      "maximumContext": 131072,
+      "supportsThinking": true,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "deepseek-coder-v2",
+      "modelSHA256": "603bd3f8a0281d16571da7c08bd661ee17ff0d1be6fcbd1b42242da257ef0bb8",
+      "maximumContext": 163840,
+      "supportsThinking": false,
+      "activeParameters": 2.4,
+      "metrics": [],
+      "quantizedCacheCompatible": false,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "lfm25-230m",
+      "modelSHA256": "7bbd90384d3deffe4c646ec9643b212802d32d4ce417c90a1ec9282100650062",
+      "maximumContext": 128000,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 25.41,
+          "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-230M/resolve/40cb2ad3b3044d5a41eee083a6103c8b523afa45/README.md",
+          "sourceSHA256": "f614b46c1e8328d38af7ae88d020dc0b7871b27e6addfa528821bee823d47270",
+          "setting": "Liquid AI model card; upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "MMLU-Pro",
+          "value": 20.25,
+          "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-230M/resolve/40cb2ad3b3044d5a41eee083a6103c8b523afa45/README.md",
+          "sourceSHA256": "f614b46c1e8328d38af7ae88d020dc0b7871b27e6addfa528821bee823d47270",
+          "setting": "Liquid AI model card; upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 71.71,
+          "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-230M/resolve/40cb2ad3b3044d5a41eee083a6103c8b523afa45/README.md",
+          "sourceSHA256": "f614b46c1e8328d38af7ae88d020dc0b7871b27e6addfa528821bee823d47270",
+          "setting": "Liquid AI model card; upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": false,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "lfm25-1.2b",
+      "modelSHA256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5",
+      "maximumContext": 128000,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "GPQA Diamond",
+          "value": 38.89,
+          "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+          "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+          "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+          "thinking": false
+        },
+        {
+          "name": "MMLU-Pro",
+          "value": 44.35,
+          "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+          "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+          "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 86.23,
+          "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/resolve/0f604ada3f766f9f257460c4c9f0b5d6f69d431b/README.md",
+          "sourceSHA256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077",
+          "setting": "Liquid AI LFM2.5-1.2B model card comparison (Artificial Analysis methodology; reported GPQA is GPQA Diamond); third-party evaluation of upstream weights.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": false,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "lfm25-2.6b",
+      "modelSHA256": "02a8b7e17487d326e46d68ce0ba24211e1b80a14c4cd0597fa73c1cd697f52ed",
+      "maximumContext": 131072,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [],
+      "quantizedCacheCompatible": false,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "lfm25-8b-a1b",
+      "modelSHA256": "4923ec14f06b968b74d663e5949867d2d9c3bf13a20b8be1a9f9af39989b2bb0",
+      "maximumContext": 128000,
+      "supportsThinking": false,
+      "activeParameters": 1.5,
+      "metrics": [],
+      "quantizedCacheCompatible": false,
+      "cacheGeometry": null,
+      "note": "No sufficiently comparable evaluation set has been reviewed for this exact model version. Missing evidence does not imply poor quality. This model remains available to download and compare."
+    },
+    {
+      "modelID": "falcon3-1b",
+      "modelSHA256": "1c92013dac1ab6e703e787f3e0829ca03cc95311e4c113a77950d15ff6dea7b3",
+      "maximumContext": 8192,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 18.6,
+          "sourceURL": "https://huggingface.co/tiiuae/Falcon3-1B-Instruct/resolve/28ba2251970a01dd1edc7ba7dad2eb71216ccfdf/README.md",
+          "sourceSHA256": "f8e4380e06067d1d0c6c8f1b048728398f280b9cf9a37c129fec47e38c09232d",
+          "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 54.4,
+          "sourceURL": "https://huggingface.co/tiiuae/Falcon3-1B-Instruct/resolve/28ba2251970a01dd1edc7ba7dad2eb71216ccfdf/README.md",
+          "sourceSHA256": "f8e4380e06067d1d0c6c8f1b048728398f280b9cf9a37c129fec47e38c09232d",
+          "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "falcon3-3b",
+      "modelSHA256": "6ea6cecba144fe5b711ca07ae4263ccdf6ee6419807a46220419189da8446557",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 29.7,
+          "sourceURL": "https://huggingface.co/tiiuae/Falcon3-3B-Instruct/resolve/411bb94318f94f7a5735b77109f456b1e74b42a1/README.md",
+          "sourceSHA256": "29ed7aced495548fa69bd37af3886131d080817b1ece361c77a34e399565bc39",
+          "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 68.3,
+          "sourceURL": "https://huggingface.co/tiiuae/Falcon3-3B-Instruct/resolve/411bb94318f94f7a5735b77109f456b1e74b42a1/README.md",
+          "sourceSHA256": "29ed7aced495548fa69bd37af3886131d080817b1ece361c77a34e399565bc39",
+          "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "falcon3-7b",
+      "modelSHA256": "f25718c3305af9a8b7b3298b6761c4fcc9eebabb5ac4fc3ddb07c8223b8204ea",
+      "maximumContext": 32768,
+      "supportsThinking": false,
+      "activeParameters": null,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 40.7,
+          "sourceURL": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct/resolve/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/README.md",
+          "sourceSHA256": "1540a8abfb081eec20d132c3fa482085ab595dab5e8b1cdc679d2a1926578426",
+          "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+          "thinking": false
+        },
+        {
+          "name": "IFEval",
+          "value": 76.5,
+          "sourceURL": "https://huggingface.co/tiiuae/Falcon3-7B-Instruct/resolve/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/README.md",
+          "sourceSHA256": "1540a8abfb081eec20d132c3fa482085ab595dab5e8b1cdc679d2a1926578426",
+          "setting": "TII model card, instruct table (MMLU-PRO 5-shot, IFEval); upstream weights, not this GGUF.",
+          "thinking": false
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gpt-oss-20b",
+      "modelSHA256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901",
+      "maximumContext": 131072,
+      "supportsThinking": true,
+      "activeParameters": 3.6,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 74.8,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 71.5,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 88.2,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    },
+    {
+      "modelID": "gpt-oss-120b",
+      "modelSHA256": "582bd40f6886200101f4c4ed9f25f3fe80cc14c86e9e2b37746cd8904a0c622d",
+      "maximumContext": 131072,
+      "supportsThinking": true,
+      "activeParameters": 5.1,
+      "metrics": [
+        {
+          "name": "MMLU-Pro",
+          "value": 80.8,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "GPQA Diamond",
+          "value": 80.1,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        },
+        {
+          "name": "IFEval",
+          "value": 88.9,
+          "sourceURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+          "sourceSHA256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "setting": "Qwen evaluation table; thinking models; source precision and token budget differ from Hearth. These are upstream capability signals, not local measurements.",
+          "thinking": true
+        }
+      ],
+      "quantizedCacheCompatible": true,
+      "cacheGeometry": null,
+      "note": "Published results describe upstream models, not this exact compressed file. Evaluation settings differ; ranking is a starting estimate, not a universal intelligence score. Local checks measure this configuration's usability, not its full knowledge or writing quality."
+    }
+  ]
+}
