@@ -83,6 +83,11 @@ class ReadableHTML(HTMLParser):
         if not self.hidden: self.parts.append(data)
     def text(self): return re.sub(r'\n[ \t]*\n(?:[ \t]*\n)+','\n\n',''.join(self.parts)).strip()
 
+def without_scripts(html):
+    """License pages are saved as documents, not apps. Their site scripts carry the host's
+    public browser API keys, which secret scanners report as leaks."""
+    return re.sub(rb'<script\b[^>]*>.*?</script\s*>', b'', html, flags=re.S | re.I)
+
 def notices(spec, meta, license_id):
     source=spec['source']; revision=meta['sha']; card=meta.get('cardData',{})
     files={x['rfilename'] for x in meta['siblings']}
@@ -101,9 +106,9 @@ def notices(spec, meta, license_id):
         elif card.get('license_link','').startswith('https://'): url=card['license_link']
         else: raise ValueError(f'{source}: no original license document')
         data=read(url); suffix='html' if b'<html' in data[:1000].lower() or b'<!doctype html' in data[:1000].lower() else 'txt'
-        docs.insert(0,(f'LICENSE.{suffix}',data,url))
+        docs.insert(0,(f'LICENSE.{suffix}',without_scripts(data) if suffix=='html' else data,url))
     if license_id=='gemma':
-        url='https://ai.google.dev/gemma/prohibited_use_policy';docs.append(('USE_POLICY.html',read(url),url))
+        url='https://ai.google.dev/gemma/prohibited_use_policy';docs.append(('USE_POLICY.html',without_scripts(read(url)),url))
     if 'README.md' in files:
         url=f'https://huggingface.co/{source}/resolve/{revision}/README.md';docs.append(('MODEL_CARD.md',read(url),url))
     if spec.get('baseSource'):

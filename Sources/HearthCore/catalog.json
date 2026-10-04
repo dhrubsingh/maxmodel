@@ -2121,17 +2121,17 @@
     "license": "Gemma Terms",
     "licenseID": "gemma",
     "licenseURL": "https://ai.google.dev/gemma/terms",
-    "licenseSHA256": "b61572f855047f5655397729a891b772f03e66b5d123a0202156cf58bbd4118c",
+    "licenseSHA256": "31dd092533a386c504bc3ea841d579cc6b95d9ba474c7cff1c4ba847637a1a09",
     "requiresLicenseAcceptance": true,
     "noticeFiles": [
       {
         "filename": "LICENSE.html",
-        "sha256": "8bc43ec02ea1764ae2974a42ffe3a817767f0ab5d3b04252e73a034be0b38f2c",
+        "sha256": "3852d1ec092045b3045cdb5dfb62a03f0bb0b51bcc2c522fd5f52dfd44a08954",
         "sourceURL": "https://ai.google.dev/gemma/terms"
       },
       {
         "filename": "USE_POLICY.html",
-        "sha256": "e575f37bb4a04563c4e1cafd8d1d98df30d6be66398b47c480aff9a9e6b7a537",
+        "sha256": "5f2c62b8d20fc0f9f1c142c75b1f89f0f5b53dfed03ed95ae9fa7d37a7525eb7",
         "sourceURL": "https://ai.google.dev/gemma/prohibited_use_policy"
       },
       {
@@ -2181,17 +2181,17 @@
     "license": "Gemma Terms",
     "licenseID": "gemma",
     "licenseURL": "https://ai.google.dev/gemma/terms",
-    "licenseSHA256": "204bf82fb6d1523d8845d8f3bf272fc568ec5a795d008db6f68bfb1f2f819f8d",
+    "licenseSHA256": "31dd092533a386c504bc3ea841d579cc6b95d9ba474c7cff1c4ba847637a1a09",
     "requiresLicenseAcceptance": true,
     "noticeFiles": [
       {
         "filename": "LICENSE.html",
-        "sha256": "e14709d414e58be5300f920aea3ff56bea8c2007c79f4f336a95a4ffca43f218",
+        "sha256": "3852d1ec092045b3045cdb5dfb62a03f0bb0b51bcc2c522fd5f52dfd44a08954",
         "sourceURL": "https://ai.google.dev/gemma/terms"
       },
       {
         "filename": "USE_POLICY.html",
-        "sha256": "5da3dd8592d53bc7adb7565d4a1f06b23ed38abc63fc707399fbc785e8ed5200",
+        "sha256": "5f2c62b8d20fc0f9f1c142c75b1f89f0f5b53dfed03ed95ae9fa7d37a7525eb7",
         "sourceURL": "https://ai.google.dev/gemma/prohibited_use_policy"
       },
       {
@@ -2241,17 +2241,17 @@
     "license": "Gemma Terms",
     "licenseID": "gemma",
     "licenseURL": "https://ai.google.dev/gemma/terms",
-    "licenseSHA256": "5df8da0c0b68765ed2f618bbde1ef4cee6e260e66730a1873f63297b2e5aa14e",
+    "licenseSHA256": "31dd092533a386c504bc3ea841d579cc6b95d9ba474c7cff1c4ba847637a1a09",
     "requiresLicenseAcceptance": true,
     "noticeFiles": [
       {
         "filename": "LICENSE.html",
-        "sha256": "d2bcbcdda15041d2592fceb71b08e86af05a39fd7a9ac016f357bd953ce31140",
+        "sha256": "3852d1ec092045b3045cdb5dfb62a03f0bb0b51bcc2c522fd5f52dfd44a08954",
         "sourceURL": "https://ai.google.dev/gemma/terms"
       },
       {
         "filename": "USE_POLICY.html",
-        "sha256": "4b468a036edbbfc282c05f5e2ac20722e6c93ec6be5141d95be6a71dfa5c394e",
+        "sha256": "5f2c62b8d20fc0f9f1c142c75b1f89f0f5b53dfed03ed95ae9fa7d37a7525eb7",
         "sourceURL": "https://ai.google.dev/gemma/prohibited_use_policy"
       },
       {
@@ -2307,17 +2307,17 @@
     "license": "Gemma Terms",
     "licenseID": "gemma",
     "licenseURL": "https://ai.google.dev/gemma/terms",
-    "licenseSHA256": "faf707b72c4e9315586450706fe66429ea17ef709b1977260d55b7c477d7ae66",
+    "licenseSHA256": "31dd092533a386c504bc3ea841d579cc6b95d9ba474c7cff1c4ba847637a1a09",
     "requiresLicenseAcceptance": true,
     "noticeFiles": [
       {
         "filename": "LICENSE.html",
-        "sha256": "77ad2f289b1af22979c5e64d323a66cae3a659dd3dad71f6d97203db180c4d12",
+        "sha256": "3852d1ec092045b3045cdb5dfb62a03f0bb0b51bcc2c522fd5f52dfd44a08954",
         "sourceURL": "https://ai.google.dev/gemma/terms"
       },
       {
         "filename": "USE_POLICY.html",
-        "sha256": "578ffaec561a890fff87536101c88c05b8ab96c95c8beae0d7d9db5ece9c72f4",
+        "sha256": "5f2c62b8d20fc0f9f1c142c75b1f89f0f5b53dfed03ed95ae9fa7d37a7525eb7",
         "sourceURL": "https://ai.google.dev/gemma/prohibited_use_policy"
       },
       {
@@ -2373,17 +2373,17 @@
     "license": "Gemma Terms",
     "licenseID": "gemma",
     "licenseURL": "https://ai.google.dev/gemma/terms",
-    "licenseSHA256": "ef588ca78aa925419299c119b40c2241deee92540d41d867cd6c54730c46fd11",
+    "licenseSHA256": "31dd092533a386c504bc3ea841d579cc6b95d9ba474c7cff1c4ba847637a1a09",
     "requiresLicenseAcceptance": true,
     "noticeFiles": [
       {
         "filename": "LICENSE.html",
-        "sha256": "a276d1db26941cb99863ab30c05627db9e3e31677a5bccf7670dd082b623bc0e",
+        "sha256": "3852d1ec092045b3045cdb5dfb62a03f0bb0b51bcc2c522fd5f52dfd44a08954",
         "sourceURL": "https://ai.google.dev/gemma/terms"
       },
       {
         "filename": "USE_POLICY.html",
-        "sha256": "9b1954b5a159b899042d56f0386337100ebc089ba3c5d86b70dd46c8cb6805ed",
+        "sha256": "5f2c62b8d20fc0f9f1c142c75b1f89f0f5b53dfed03ed95ae9fa7d37a7525eb7",
         "sourceURL": "https://ai.google.dev/gemma/prohibited_use_policy"
       },
       {
@@ -4137,12 +4137,12 @@
     "license": "Falcon LLM License",
     "licenseID": "falcon-llm-license",
     "licenseURL": "https://falconllm.tii.ae/falcon-terms-and-conditions.html",
-    "licenseSHA256": "d55549e593af1988ddeda5a5c88cddc38ea80522d3e6711cbc9d627688b6016b",
+    "licenseSHA256": "232ea9f4b688503dbf9842ddd42e17831fd1e0db7fdad15345a9aeb5931837fa",
     "requiresLicenseAcceptance": true,
     "noticeFiles": [
       {
         "filename": "LICENSE.html",
-        "sha256": "1776c8eef4a78263bad9f6e01849d526855b3fb67182d4f73ffd52bad8400853",
+        "sha256": "983d06358bfeea4643d449db0f2e280ab7354bd58c58a597e915d5bd644c56cb",
         "sourceURL": "https://falconllm.tii.ae/falcon-terms-and-conditions.html"
       },
       {
@@ -4192,12 +4192,12 @@
     "license": "Falcon LLM License",
     "licenseID": "falcon-llm-license",
     "licenseURL": "https://falconllm.tii.ae/falcon-terms-and-conditions.html",
-    "licenseSHA256": "d55549e593af1988ddeda5a5c88cddc38ea80522d3e6711cbc9d627688b6016b",
+    "licenseSHA256": "232ea9f4b688503dbf9842ddd42e17831fd1e0db7fdad15345a9aeb5931837fa",
     "requiresLicenseAcceptance": true,
     "noticeFiles": [
       {
         "filename": "LICENSE.html",
-        "sha256": "1776c8eef4a78263bad9f6e01849d526855b3fb67182d4f73ffd52bad8400853",
+        "sha256": "983d06358bfeea4643d449db0f2e280ab7354bd58c58a597e915d5bd644c56cb",
         "sourceURL": "https://falconllm.tii.ae/falcon-terms-and-conditions.html"
       },
       {
@@ -4247,12 +4247,12 @@
     "license": "Falcon LLM License",
     "licenseID": "falcon-llm-license",
     "licenseURL": "https://falconllm.tii.ae/falcon-terms-and-conditions.html",
-    "licenseSHA256": "d55549e593af1988ddeda5a5c88cddc38ea80522d3e6711cbc9d627688b6016b",
+    "licenseSHA256": "232ea9f4b688503dbf9842ddd42e17831fd1e0db7fdad15345a9aeb5931837fa",
     "requiresLicenseAcceptance": true,
     "noticeFiles": [
       {
         "filename": "LICENSE.html",
-        "sha256": "1776c8eef4a78263bad9f6e01849d526855b3fb67182d4f73ffd52bad8400853",
+        "sha256": "983d06358bfeea4643d449db0f2e280ab7354bd58c58a597e915d5bd644c56cb",
         "sourceURL": "https://falconllm.tii.ae/falcon-terms-and-conditions.html"
       },
       {

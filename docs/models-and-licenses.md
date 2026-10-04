@@ -41,6 +41,7 @@ The catalog lives in `Sources/HearthCore/catalog.json`, built from the reviewed 
 - Custom terms must be **explicitly accepted** before download. Acceptance is saved against the bundled terms' digest, so changed terms ask again.
 - Original licenses, use policies, model cards, required attribution ("Built with Llama"), and provenance are kept with the installed weights, and existing installations receive them too. Bundled license documents are hash-checked when the catalog loads and ship byte-for-byte.
 - Installed notices are rewritten only when their bytes change; missing or damaged documents, and their permissions, are repaired.
+- Notices published as web pages (the Gemma terms and use policy, the Falcon license) are saved without the site's scripts. Their text is unchanged; the scripts only load the website and carry its public browser keys.
 - A model's own license and incorporated policies still govern its use. MaxModel preserves them and requires acknowledgement; it never replaces a publisher's terms with a blanket open-source license.
 
 The notices live in `Sources/HearthCore/model-notices/<model id>/`.
