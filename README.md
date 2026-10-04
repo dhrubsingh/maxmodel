@@ -94,5 +94,3 @@ Then read **[CONTRIBUTING.md](CONTRIBUTING.md)** for setup, step-by-step recipes
 MaxModel is [MIT licensed](LICENSE). Models are downloaded separately from their publishers and keep their own licenses, which MaxModel shows, and asks you to accept where required, before download.
 
 Built on [llama.cpp](https://github.com/ggml-org/llama.cpp), [Sparkle](https://sparkle-project.org), and [Swift Markdown](https://github.com/swiftlang/swift-markdown), with models from Qwen, Google, Meta, Mistral, Microsoft, OpenAI, IBM, and others. See [Models and licenses](docs/models-and-licenses.md#upstream-components). MaxModel is independent of these projects.
-
-*Formerly Hearth. Models and chats from Hearth move over automatically on first launch.*
