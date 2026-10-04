@@ -58,7 +58,7 @@ jobs:
           SPARKLE_PRIVATE_KEY: ${{ secrets.SPARKLE_PRIVATE_KEY }}
         run: |
           if [ -z "$SPARKLE_PRIVATE_KEY" ]; then
-            echo "::error::Add the SPARKLE_PRIVATE_KEY repository secret (see README, Releases)."
+            echo "::error::Add the SPARKLE_PRIVATE_KEY repository secret (see docs/building-and-releasing.md)."
             exit 1
           fi
 

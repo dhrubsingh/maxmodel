@@ -1,0 +1,58 @@
+name: Bug report
+description: Something doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please don't include private chats or documents. For security problems, use the [Security tab](https://github.com/dhrubsingh/maxmodel/security) instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open MaxModel
+        2. …
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: MaxModel version
+      description: MaxModel → About MaxModel
+      placeholder: "0.9.0"
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac
+      description: Chip and memory, shown on the This Mac screen
+      placeholder: "M2 Pro, 32 GB"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "macOS 15.6"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model in use
+      description: If the problem involves chatting, downloading, or attachments
+      placeholder: "Qwen3.5 · 4B"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or other details
+      description: Error messages, screenshots, or anything else that helps.

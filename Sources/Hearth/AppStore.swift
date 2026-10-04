@@ -402,7 +402,7 @@ final class AppStore {
             if data.acceptedLicenses == nil { data.acceptedLicenses = [:] }
             data.acceptedLicenses?[model.id] = digest; save()
         }
-        guard !data.offlineOnly else { error = "Turn off Download lock in Your Mac to allow a model download."; return }
+        guard !data.offlineOnly else { error = "Turn off Download lock in This Mac to allow a model download."; return }
         downloadID = model.id; verifying = false; downloadProgress = nil
         let client = ModelDownload(model: model, destination: storage.partialURL(model)) { [weak self] progress in
             Task { @MainActor in self?.downloadProgress = progress }
@@ -770,7 +770,7 @@ final class AppStore {
                 self.data.runtimeProfiles?[model.id] = record.selected
                 self.data.benchmarks[model.id] = result
                 self.data.runtimeFailures = self.data.runtimeFailures?.filter { !$0.key.hasPrefix(model.id + ":") }
-                self.save(); self.status = "Optimization checked · results in Performance & why"
+                self.save(); self.status = "Optimization checked · results in Why this one?"
             } catch {
                 await engine.unload()
                 self.activeID = nil

@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest an idea or improvement
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        MaxModel aims to stay simple, private, and local. See [what MaxModel stands for](https://github.com/dhrubsingh/maxmodel/blob/main/CONTRIBUTING.md#what-maxmodel-stands-for) before suggesting something large.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe what you're trying to do and what gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you like to work on this?
+      options:
+        - "No"
+        - "Yes, with some guidance"
+        - "Yes"

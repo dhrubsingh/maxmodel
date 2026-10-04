@@ -1,0 +1,48 @@
+name: Model request
+description: Suggest a model for the catalog, or new benchmark scores or a knowledge cutoff for an existing one
+labels: [model]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Models must be single-file GGUF releases with a license stated by the original publisher. See [Add or update a model](https://github.com/dhrubsingh/maxmodel/blob/main/CONTRIBUTING.md#add-or-update-a-model).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Request type
+      options:
+        - New model
+        - Benchmark scores for an existing model
+        - Knowledge cutoff for an existing model
+        - Problem with an existing model
+    validations:
+      required: true
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher's release
+      description: The original model on Hugging Face
+      placeholder: "https://huggingface.co/Qwen/Qwen3.5-4B"
+    validations:
+      required: true
+  - type: input
+    id: gguf
+    attributes:
+      label: GGUF download
+      description: A repository with the GGUF file, if different
+      placeholder: "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF"
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: "Apache-2.0"
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Published scores or cutoff
+      description: MMLU-Pro, IFEval, and GPQA Diamond results, or a stated knowledge cutoff, each with a link to its source.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs in MaxModel
+      description: What it's good at, which Macs it suits, or what it adds over existing models.
